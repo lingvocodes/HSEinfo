@@ -1,3 +1,3 @@
 # HSEinfo
 
-See pages at http://lingvocodes.github.io
+See pages at http://lingvocodes.github.io/HSEinfo/
