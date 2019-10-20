@@ -1,0 +1,7 @@
+Options -Indexes
+AddDefaultCharset utf-8
+
+# Use PHP5 Single php.ini as default
+AddHandler application/x-httpd-php5s .php
+
+DirectoryIndex index.php index.html index.htm index.shtml
