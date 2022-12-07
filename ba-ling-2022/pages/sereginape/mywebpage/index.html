@@ -1,0 +1,130 @@
+<!doctype html>
+
+<!-- так в HTML обозначаются комментарии. Выше вы видите объявление типа документа (DOCTYPE), так браузер понимает, что код ниже нужно интерпретировать как html -->
+
+<html>
+
+<!-- зона заголовка html, тег <title> - строка, которую браузер отображает на вкладках над страницами, <meta> и <link> сообщают технические сведения для браузера, например, что файл имеет кодировку Юникод (utf-8) -->
+
+	<head>
+		<title>Личная страница Серегиной Полины</title>
+	 	<!-- Required meta tags -->
+	 	<meta charset="utf-8">
+	 	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+		<meta name="description" content="Личная страница и контакты">
+
+		<!-- Bootstrap Core CSS -->
+		<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" media="screen">
+<!-- Эта страница сделана с помощью bootstrap - популярной библиотеки для создания и настройки сайтов. Ниже вы увидите, что многие теги содержат атрибуты class - bootstrap содержит шаблоны, как такие элементы красиво оформить -->
+
+	</head>
+	
+<!-- body - главная, содержательная часть страницы. Контент на этой странице делится на меню (nav), "шапку" (header), "подвал" (footer) и все остальное (мы заключили остаток в тег section) -->	
+	<body style="background-color:yellowgreen;">
+
+<!-- меню (navigation bar) -->
+
+		<nav id="mainNav" class="navbar navbar-default navbar-fixed-top navbar-custom">
+
+<!-- div - это контейнеры - коробочки с текстом и/или графикой, которые можно вкладывать друг в друга. Пристально смотреть на теги в этой части кода не нужно -->
+			<div class="container"> 
+				<div class="navbar-header"> 
+					<a href="https://ling.hse.ru/" class="navbar-brand">Школа лингвистики НИУ ВШЭ</a> 
+				</div> 
+				<nav class="collapse navbar-collapse" id="bs-navbar"> 
+					<ul class="nav navbar-nav navbar-right"> 
+						<li> <a href="https://lingvocodes.github.io/HSEinfo/ba-ling-2021/index.html">Страница курса</a> </li> 
+						<li> <a href="https://lingvocodes.github.io/HSEinfo/ba-ling-2021/latin_2.html">Страница группы</a> </li> 
+<!-- поправьте номер группы в URL, если нужно (от 1 до 4) -->
+					</ul>
+				</nav> 
+			</div>
+		</nav>
+
+<!-- начинается шапка. у тега header есть атрибут style, который задает цвет фона и отступы. поменяйте значения атрибутов и посмотрите, как изменится страница -->
+
+		<header style="background-image:url('https://raw.githubusercontent.com/sereginape/lingdata/main/mywebpage/leaves.jpg'); padding-top:70px; "> 
+			<div class="container"> 
+				<div class="row">
+					<div class="col-md-4">
+						<br><br>
+<!-- здесь и дальше нужно поменять весь содержательный текст, чтобы получилась ваша личная страница -->
+						<h1 style="color:darkgreen;">Серегина Полина</h1>
+						<hr style="height:2px;border-width:0;color:gray;background-color:darkgreen"> <!-- это горизонтальная линия -->
+						<ul>
+						<li><p><i><b>Я - человек, который очень любит изучать английский язык</b></i></p></li>
+						</ul>
+					</div>
+					<div class="col-md-4">
+<!-- img - тег для вставки изображений. Мы использовали атрибут style, чтобы задать размер изображения и ширину рамки-->
+<!-- Измените URL на URL вашей фотографии, а также настройте размер изображения -->
+<img src="https://raw.githubusercontent.com/sereginape/lingdata/main/mywebpage/ME.jpg" style="height:450px; margin:20px 20px 40px 20px; " >
+					</div>
+				</div>
+			</div>
+		</header>
+
+<!-- часть страницы, которая под шапкой -->
+		<section id="portfolio">
+			<div class="container">
+
+<!-- атрибут col-md-... говорит, что контент будет разделен на несколько столбцов, их ширина соотносится как 3 - 6 - 3 (Bootstrap использует воображаемую сетку из 12 равных по ширине колонок) -->
+				<div class="col-md-4">
+
+<!-- <article> не влияет на оформление, но помогает структурировать контент на осмысленые разделы -->
+					<article>
+						<h3 style="color:darkgreen;">Место учебы</h3>
+						<p>Фундаментальная и компьютерная лингвистика, НИУ ВШЭ, Москва</p>
+					</article>
+					<article>
+						<h3 style="color:darkgreen;">Родной город</h3>
+						<p>Родилась в Екатеринбурге, но с двух лет живу в Москве</p>
+					</article>
+					<article>
+						<h3 style="color:darkgreen;">Школа</h3>
+<!-- когда будете менять текст, не используйте бюрократических слов типа ГБОУ СОШ, ну пожаалуйста -->
+						<p>Лицей НИУ ВШЭ</p>
+						</p><small> (надеюсь, "НИУ ВШЭ" - это не бюрократические слова) </small> </p>
+					</article>
+				</div>
+
+				<div class="col-md-4">
+					<article>
+						<h3 style="color:darkgreen;">Увлечения и интересы</h3>
+						<ul>
+						<li> читать </li>
+						<li> смотреть фильмы </li>
+						<li> узнавать новое об английском </li>
+						<li> изучать акценты в английском языке </li>
+						<li> работать над своим произношением </li>
+						<li> рукодельничать </li>
+						<li> узнавать интересные факты про математику </li>
+						<li> пить чай</li>
+						</ul>
+					<h3 style="color:darkgreen;">Любимый цвет</h3>
+					<p> Как ни странно, зеленый </p>
+					</article>
+				</div>
+
+				<div class="col-md-4">
+				 <article>
+					<h3 style="color:darkgreen;">Я в соцсетях и не только</h3>
+<!-- тег <ul> - unordered list. Еще бывает тег <ol> -->
+					<ul>
+						<li> <u> Мой телеграм:</u> <a href="https://t.me/sereginape"> @sereginape </a> </li>
+						<li> <u> Мой гитхаб:</u> <a href="https://github.com/sereginape/lingdata"> https://github.com/sereginape/lingdata </a></li>
+						</ul>
+				</div>
+				</article>
+			</div>
+		</section>
+
+<!-- это подвал. В этой части страницы обычно ставят копирайт (с помощью символа &copy;) и пишут об истории создания страницы. Поставьте свой копирайт -->
+		<footer class="bs-docs-footer"> 
+			<div class="container"> 
+				<p style="text-align:right; ">&copy; П. Серегина, 2022</p> 
+			</div>
+		</footer>
+	</body>
+</html>

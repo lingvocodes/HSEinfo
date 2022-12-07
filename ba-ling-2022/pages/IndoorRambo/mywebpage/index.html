@@ -1,0 +1,162 @@
+<!doctype html>
+
+<!-- так в HTML обозначаются комментарии. Выше вы видите объявление типа документа (DOCTYPE), так браузер понимает, что код ниже нужно интерпретировать как html -->
+
+<html>
+
+<!-- зона заголовка html, тег <title> - строка, которую браузер отображает на вкладках над страницами, <meta> и <link> сообщают технические сведения для браузера, например, что файл имеет кодировку Юникод (utf-8) -->
+
+	<head>
+		<title>Личная страница Михаила Захарова</title>
+	 	<!-- Required meta tags -->
+	 	<meta charset="utf-8">
+	 	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+		<meta name="description" content="Личная страница и контакты">
+
+		<!-- Bootstrap Core CSS -->
+		<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" media="screen">
+<!-- Эта страница сделана с помощью bootstrap - популярной библиотеки для создания и настройки сайтов. Ниже вы увидите, что многие теги содержат атрибуты class - bootstrap содержит шаблоны, как такие элементы красиво оформить -->
+
+	</head>
+	
+<!-- body - главная, содержательная часть страницы. Контент на этой странице делится на меню (nav), "шапку" (header), "подвал" (footer) и все остальное (мы заключили остаток в тег section) -->	
+	<body>
+
+<!-- меню (navigation bar) -->
+
+		<nav id="mainNav" class="navbar navbar-default navbar-fixed-top navbar-custom">
+
+<!-- div - это контейнеры - коробочки с текстом и/или графикой, которые можно вкладывать друг в друга. Пристально смотреть на теги в этой части кода не нужно -->
+			<div class="container"> 
+				<div class="navbar-header"> 
+					<a href="https://ling.hse.ru/" class="navbar-brand">Школа лингвистики НИУ ВШЭ</a> 
+				</div> 
+				<nav class="collapse navbar-collapse" id="bs-navbar"> 
+					<ul class="nav navbar-nav navbar-right"> 
+						<li> <a href="https://olesar.github.io/lingdata/">Страница курса</a> </li> 
+						<li> <a href="https://docs.google.com/spreadsheets/d/1FXWlUswvJPkJQn3kYLzIIylI-mJ00ZYFlP9RooAA890/edit#gid=704394361">Страница группы</a> </li> 
+<!-- поправьте номер группы в URL, если нужно (от 1 до 4) -->
+					</ul>
+				</nav> 
+			</div>
+		</nav>
+
+<!-- начинается шапка. у тега header есть атрибут style, который задает цвет фона и отступы. поменяйте значения атрибутов и посмотрите, как изменится страница -->
+
+		<header style="background-color:lightgreen; padding-top:80px; "> 
+			<div class="container"> 
+				<div class="row">
+					<div class="col-md-4">
+						<br><br>
+<!-- здесь и дальше нужно поменять весь содержательный текст, чтобы получилась ваша личная страница -->
+						<h1>Михаил Захаров</h1>
+						<hr> <!-- это горизонтальная линия -->
+						<p><i>Человек, умеющий делать </i><b>хоть что-то</b></p> 
+					</div>
+					<div class="col-md-4">
+<!-- img - тег для вставки изображений. Мы использовали атрибут style, чтобы задать размер изображения и ширину рамки-->
+<!-- Измените URL на URL вашей фотографии, а также настройте размер изображения -->
+<img src="https://sun9-63.userapi.com/impg/aBQIwR9P5FNmR2QCCxKNzFCBAbXMMtK6Rlpkxw/DaIk7myCX-g.jpg?size=1280x1035&quality=96&sign=0283bbb0ba763b7eddc1c3272d6a973c&type=album" style="height:320px; margin:20px 20px 40px 20px; " >
+					</div>
+				</div>
+			</div>
+		</header>
+
+<!-- часть страницы, которая под шапкой -->
+		<section id="portfolio">
+			<div class="container">
+
+<!-- атрибут col-md-... говорит, что контент будет разделен на несколько столбцов, их ширина соотносится как 3 - 6 - 3 (Bootstrap использует воображаемую сетку из 12 равных по ширине колонок) -->
+				<div class="col-md-3">
+
+<!-- <article> не влияет на оформление, но помогает структурировать контент на осмысленые разделы -->
+					<article>
+						<h3>Место учебы</h2>
+						<p>Фундаментальная и прикладная лингвистика, НИУ ВШЭ, Москва</p>
+					</article>
+					<article>
+						<h3>Родной город</h2>
+						<p>Томск</p>
+					</article>
+					<article>
+						<h3>Школа</h2>
+<!-- когда будете менять текст, не используйте бюрократических слов типа ГБОУ СОШ, ну пожаалуйста -->
+						<p>Академический лицей<br><i>(не рекомендую)</i></p>
+					</article>
+				</div>
+
+				<div class="col-md-6">
+					<article>
+						<h3>Radiohead — Fitter Happier</h2>
+						<p>Fitter, happier,
+<br>More productive,
+<br>Comfortable,
+<br>Not drinking too much,
+<br>Regular exercise at the gym (3 days a week),
+<br>Getting on better with your associate employee contemporaries,
+<br>At ease,
+<br>Eating well (no more microwave dinners and saturated fats),
+<br>A patient, better driver,
+<br>A safer car (baby smiling in back seat),
+<br>Sleeping well (no bad dreams),
+<br>No paranoia,
+<br>Careful to all animals (never washing spiders down the plughole),
+<br>Keep in contact with old friends (enjoy a drink now and then),
+<br>Will frequently check credit at (moral) bank (hole in the wall),
+<br>Favours for favours,
+<br>Fond, but not in love,
+<br>Charity standing orders,
+<br>On Sundays ring road supermarket,
+<br>(No killing moths or putting boiling water on the ants),
+<br>Car wash (also on Sundays),
+<br>No longer afraid of the dark or midday shadows,
+<br>Nothing so ridiculously teenage and desperate,
+<br>Nothing so childish,
+<br>At a better pace,
+<br>Slower and more calculated,
+<br>No chance of escape,
+<br>Now self-employed,
+<br>Concerned (but powerless),
+<br>An empowered and informed member of society (pragmatism not idealism),
+<br>Will not cry in public,
+<br>Less chance of illness,
+<br>Tyres that grip in the wet (shot of baby strapped in back seat),
+<br>A good memory,
+<br>Still cries at a good film,
+<br>Still kisses with saliva,
+<br>No longer empty and frantic,
+<br>Like a cat,
+<br>Tied to a stick
+<br>That's driven into,
+<br>Frozen winter shit (the ability to laugh at weakness),
+<br>Calm,
+<br>Fitter, healthier and more productive,
+<br>A pig,
+<br>In a cage,
+<br>On antibiotics.
+<br></p>
+					</article>
+				</div>
+
+				<div class="col-md-3">
+					<h3>Я в соцсетях</h3>
+<!-- тег <ul> - unordered list. Еще бывает тег <ol> -->
+					<ul>
+						<li><a href = "https://vk.com/the_penya">VK</a></li>
+						<li>Facebook* есть, а доступа нет</li>
+						<li><a href="https://www.instagram.com/the.penya/">Instagram</a>*</li>
+					</ul>
+					<p><i>* принадлежат компании  Meta, признаной экстремистской организацией и запрещенной в России</i></p>
+				</div>
+			</div>
+		</section>
+
+<!-- это подвал. В этой части страницы обычно ставят копирайт (с помощью символа &copy;) и пишут об истории создания страницы. Поставьте свой копирайт -->
+		<footer class="bs-docs-footer"> 
+			<div class="container"> 
+				<p style="text-align:right; ">&copy; М. Захаров, 2022</p> 
+			</div>
+		</footer>
+	</body>
+</html>

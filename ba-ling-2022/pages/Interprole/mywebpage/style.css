@@ -1,0 +1,119 @@
+BODY {
+	background: snow; 
+	color: black; 
+	font-family: 'Montserrat', sans-serif;
+	}
+H1 {
+	color: black;
+	border-radius: 5px;
+	background-color: white;
+	border: 1px solid gray;
+	background-size: 12px 12px;
+    letter-spacing: 1px;
+    padding: 15px 20px;
+    font-size: 30px;
+	text-align:center;
+	margin-top: 1em;
+	margin-bottom: 1em;
+    font-weight: bold;
+    font-family: 'Montserrat', sans-serif;
+	transition:all 0.6s ease-in-out;
+	}
+TABLE {
+	background-size: 12px 12px;
+    font-family: 'Montserrat', sans-serif;
+	letter-spacing: 1px;	
+	}
+TH, TD {
+    border: 1px solid grey;
+    border-radius: 10px;
+    background: azure;
+    box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.3);
+    transition:all 0.2s ease-in-out;
+	}
+TH:hover, TD:hover {
+	background: antiquewhite;
+	}
+.block {
+	display:grid; 
+	grid-template-columns:243px 1fr;
+	grid-column-gap:20px;
+	}
+H3 {
+	color: black;
+	border-radius: 10px;
+	border: 1px solid gray;
+    background-color: white;
+    margin-bottom: 0px;
+	margin-top: 0px;
+    letter-spacing: 1px;
+    padding: 15px 15px;
+    font-size: 30px;
+    font-weight: bold;
+    font-family: 'Montserrat', sans-serif;
+	transition:all 0.4s ease-in-out;
+	display: block;
+	}
+A {
+	border-radius: 20px;
+	border: 1px solid gray;
+    background-color: white;
+	background-size: 12px 12px;
+	color: blue; 
+	text-decoration: none;
+    display: inline-block;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    padding: 15px 20px;
+    font-size: 20px;
+	margin-top: 1em;
+	margin-bottom: 1em;
+    font-weight: bold;
+    font-family: 'Montserrat', sans-serif;
+    transition:all 0.4s ease-in-out;
+	box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.3);
+    }
+A:hover {
+	color: orange; 
+    margin: 15px 15px;
+    }
+H1:hover, H3:hover {
+	background: antiquewhite;
+	}
+.conts {
+	display: block;
+	}
+.conts a {
+	font-size: 0px;
+	transition:all 0.6s ease-in-out;
+	}
+.conts:hover a {
+	font-size: 20px;
+	}
+.table:hover {
+	font-size: 16px;
+	background-size: 12px 12px;
+	}	
+.table {
+	transition:all 0.6s ease-in-out;
+	font-size: 0px;
+	display: block;	
+	}
+.table table {
+	letter-spacing: 0px;
+}
+.table:hover table {
+	letter-spacing: 1px;
+	}
+.education:hover  ~ .table {
+	font-size: 16px;
+	background-size: 12px 12px;
+	}
+.education:hover  ~ .table table {
+	letter-spacing: 1px;
+	}
+.contacts:hover ~ .conts a {
+	font-size: 20px;
+	}
+
+

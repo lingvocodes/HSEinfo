@@ -1,0 +1,78 @@
+body{
+	background-image: url(https://raw.githubusercontent.com/SovaSofya/lingdata/main/mywebpage/full-bloom.jpg); 
+}
+#content{
+	margin: 10px 10px 10px 250px;
+	background-color: rgba(180, 255, 255, 0.5);
+	border: 1px dotted #487a78;
+	padding: 10px;
+    align-content: top;
+}
+h1{
+	font-family: Palatino Linotype;
+	font-weight: bold;
+	font-size: 200%;
+	color: rgb(0, 48, 104);
+	text-decoration: underline;
+	margin-bottom: 0;
+}
+h2{
+	font-family: Palatino Linotype;
+	font-style: italic;
+	font-size: 95%;
+	color: rgb(0, 154, 154);
+}
+h2.pafosnoe{
+	font-family: Palatino Linotype;
+	font-style: normal;
+	font-size: 100%;
+	color: rgb(0, 154, 154);
+}
+h3{
+	font-family: Palatino Linotype;
+	font-style: bold;
+	text-decoration: underline;
+	text-decoration: overline;
+	color: rgb(0, 2, 94);
+	text-indent: 20px
+}
+p{
+	text-indent: 10px;
+	font-family: Palatino Linotype;
+	font-size: 100%;
+	color: rgb(0,42, 42);
+}
+#photosleft{
+	float: left;
+	margin-right: 10px;
+	margin-left: 10px;
+	border: 1px dotted rgb(0, 42, 42);
+	padding: 10px;
+	background-color: rgba(0, 48, 48, 0.2);
+}
+
+#links{
+	margin: 10px 10px 10px 250px;
+	background-color: rgba(255, 255, 203, 0.5);
+	border: 1px dotted rgb(255, 205, 94);
+	padding: 40px;
+    align-content: top center;
+    font-family: Palatino Linotype;
+}
+p.image{
+	text-indent: 0;
+}
+p.decor{
+	text-decoration: underline;
+	text-decoration: overline;
+}
+
+a { 
+  color: orange;
+  text-decoration: none; 
+}
+a:hover { 
+  color: red; 
+  text-decoration: underline;
+}
+

@@ -1,0 +1,328 @@
+@charset "utf-8";
+.numer1 {width:60%}
+.numer2 {width:100%}
+.numer3 {width:100%;
+		overflow: auto;
+        scroll-behavior: smooth;}
+.numer3.1{width:20%}
+
+body{ /*Не трогать!*/
+	transition: 1s;
+	font-family: Segoe UI;
+    line-height: 1.6;
+    font-size: 18px;
+    background: #ffffff;
+    height: 100%;
+    width: 100%;
+    margin: 0;
+	}
+	
+body * {/*Не трогать!*/
+    transition: 1s;
+    box-sizing: border-box;
+    border: none;
+    background: none;
+    outline: none;
+    margin: 0;
+    padding: 0;
+	}
+	
+/*Стиль текста, можете выбирать любой тег*/
+	
+.text{/*Стиль текста*/
+	font-family: Segoe UI;
+    line-height: 1.3;
+    font-size: 16px;
+    background: #ffffff;
+    height: 100%;
+    width: 100%;
+    color: #000;
+	}
+	
+.tab{/*Стиль текста*/
+    font-family: Segoe UI;
+    line-height: 1.3;
+    font-size: 20px;
+    background: #ffffff;
+    height: 100%;
+	width: 100%;
+    color: #000;
+	}
+	
+.historywater{ /*Стиль текста для вод и истории*/
+	transition: 1s;
+	font-family: Segoe UI;
+    line-height: 1.6;
+    font-size: 18px;
+    background: #ffffff;
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    color: #000;
+	}
+
+.text1{/*Стиль текста для фгп*/
+	font-family: Segoe UI;
+    line-height: 1.3;
+    font-size: 17px;
+	font-weight:400;
+    background: #ffffff;
+    color: #000;
+    height: 100%;
+    width: 100%;
+	padding-right: 40px;
+	}
+
+.text2{/*Стиль текста для фгп*/
+	font-family: Segoe UI;
+    line-height: 1.3;
+    font-size: 17px;
+    background: #ffffff;
+    color: #000;
+    height: 100%;
+    width: 100%;
+	padding-right: 40px;
+	}
+
+.text3{/*Стиль текста для фгп*/
+	font-family: Segoe UI;
+    line-height: 1.3;
+	font-weight:400;
+    font-size: 17px;
+    background: #ffffff;
+    color: #000;
+    height: 100%;
+    width: 100%;
+	}
+.text4{
+	font-family: Segoe UI;
+	line-height: 1.3;
+    font-size: 13px;
+    background: #ffffff;
+    color: #000;
+    height: 100%;
+    width: 100%;
+}
+
+    
+    
+
+
+.text_basement{
+	font-family: Segoe UI;
+	line-height: 1.3;
+    font-size: 12px;
+    color: #000;
+}
+.australia{/*Надпись "АВСТРАЛИЯ"*/
+	font-size: 60px;
+	font-family: "Segoe UI", Bold;
+	color: #235975;
+	}
+	
+.australiahesd{/*Подзаголовки разделов*/
+	font-size: 30px;
+	font-family: "Segoe UI", Bold;
+	color: #235975;
+    }
+.australiaheadhead {/*Заголвки разделов*/
+	font-size: 40px;
+	font-family: "Segoe UI", Bold;
+	color: #235975;
+	}
+	
+.a{/*Стиль для гиперссылок, не трогать! */
+    text-decoration: none;
+    color: #173a4c;
+	transition: .3s linear
+	} 
+.a-1{/*Стиль для гиперссылок, не трогать! */
+    text-decoration: none;
+    color: #173a4c;
+	transition: .3s linear
+	} 
+
+hr{/*Серая полоска в шапке, не трогать!*/
+    border: none; 
+    background-color: #4e4e4e; 
+    color: #4e4e4e; 
+    height: 2px; 
+    }
+
+.header{/*стиль для картинки в шапке, не трогать!*/
+    display: block;
+    height: 550px;
+    background: url( "images_1/коалки.jpg")    repeat-x center bottom;
+    }
+		
+/*Стили для выравнивания картинок*/
+
+.img2{/*Выравнение картинок в ячейках слева*/
+    margin-right: 40px
+    }
+
+.img3{/*Выравнение картинок в ячейках справа*/
+    margin-left: 40px
+    }
+
+.img31{/*Выравнение картинок в ячейках справа в разделе флора*/
+    margin-left: 32px 
+	}
+.content{scroll-behavior: smooth}
+.highlight {
+  background-color: yellow;
+}
+.highlight.current {
+  background-color: #8BC34A;
+font-size: 40px;
+}
+.menu {position:relative-top;
+		}
+.topmenu {list-style: none;}
+.submenu {list-style: none;}
+.topmenu:after {content:url("physical-geografical location.htm");
+				display: block;
+				clear: both;}
+.topmenu > li {
+  float: left;
+  position: relative;
+}
+.topmenu > li:first-child {border-left: 0;}
+.topmenu > li > a {  
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+.topmenu > li > a-1 {  
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+.topmenu > li > a.a, 
+.topmenu > li > a-1.a-1, 
+.submenu a:hover { font-family: Segoe UI;
+	font-size:12px;
+	color: #000000;}
+.submenu a-1:hover { font-family: Segoe UI;
+	font-size:12px;
+	color: #000000;}
+.submenu {
+  position: absolute;
+  z-index: 5;
+  background: white;
+  visibility: hidden;
+  opacity: 0; 
+  transform-origin: 0% 0%;
+  transform: rotateX(-90deg);
+  transition: .3s linear;  
+}
+.submenu li {position: relative;
+			border:1px solid #235975 }
+.submenu li a {
+  color: #282828;
+  font-size: 13px;
+}
+.submenu li a-1 {
+  color: #282828;
+  font-size: 13px;
+}
+.submenu .submenu {
+  position: absolute;
+  top: 0;
+  left: calc(100% - 1px);
+  left: -webkit-calc(100% - 1px);
+}
+td li:hover > .submenu {
+  transform: rotateX(0deg);
+  visibility: visible;
+  opacity: 1;
+}
+.basement1 {
+	background: #eeeeee
+}
+.basement2 {
+	background: #dddddd
+}
+.text_basement{
+	text-decoration: none;
+	font-family: Segoe UI;
+	line-height: 1.7;
+    font-size: 12px;
+	font-weight: bold;
+	color: #868683
+	
+}
+.text_basement_nazvanie{
+	font-family: Segoe UI;
+	line-height: 3;
+    font-size: 14px;
+    background: #eeeeee;
+	font-weight: bold;
+	color: #646464	
+}
+#blue {background-color:#e8f5ed;
+	color:#f1802c;}
+#orange {background-color:#ffdbb5;
+	color:#25354f;}
+#orange-1 {background-color:#ffdbb5 }
+#blue-1 {background-color:#e8f5ed;}
+.Letter{font-size:36px;}
+
+
+
+#tr11{background-color:#CCF6FF}
+.authors{font-size: 16px;
+		font-family: Segoe Ui;}
+.authors-name{color: #a15d24;}
+
+
+
+.closing-button {
+  text-decoration: none;
+  display: inline-block;
+/*  margin: 10px;*/
+  color: #4e4e4e;
+  box-shadow: 0 0 0 2px #4e4e4e;
+  padding: 3px 3px;
+  width: 100px;
+  text-align: center;
+  letter-spacing: 2px;
+  position: relative;
+  overflow: hidden;
+  font-size: 16px;
+  
+}
+.closing-button span {
+  font-family: 'Segoe UI';
+  position: relative;
+  z-index: 5;
+}
+.closing-button:before, .closing-button:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+}
+.closing-button:before {
+  transform: translateX(-100%);
+  background: #fff;
+  transition: transform .3s cubic-bezier(.55, .055, .675, .19);
+}
+.closing-button:after {
+  background: #ffc7a8;
+  transform: translateX(100%);
+  transition: transform .3s cubic-bezier(.16, .73, .58, .62) .3s;
+}
+.closing-button:hover:before, .closing-button:hover:after {
+  transform: translateX(0);
+}
+.botton-text{/*Стиль текста*/
+    font-family: Segoe UI;
+    line-height: 1.3;
+    font-size: 20px;
+    background:#00000 ;
+    height: 100%;
+	width: 100%;
+    color:#f1802c;
+	}
+	

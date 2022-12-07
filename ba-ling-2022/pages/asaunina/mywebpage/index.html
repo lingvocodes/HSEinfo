@@ -1,0 +1,182 @@
+<!doctype html>
+
+<!-- так в HTML обозначаются комментарии. Выше вы видите объявление типа документа (DOCTYPE), так браузер понимает, что код ниже нужно интерпретировать как html -->
+
+<html>
+
+<!-- зона заголовка html, тег <title> - строка, которую браузер отображает на вкладках над страницами, <meta> и <link> сообщают технические сведения для браузера, например, что файл имеет кодировку Юникод (utf-8) -->
+
+	<head>
+		<title>Личная страница Анастасии Сауниной</title>
+	 	<!-- Required meta tags -->
+	 	<meta charset="utf-8">
+	 	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+		<meta name="description" content="Личная страница и контакты">
+
+		<!-- Bootstrap Core CSS -->
+		<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" media="screen">
+<!-- Эта страница сделана с помощью bootstrap - популярной библиотеки для создания и настройки сайтов. Ниже вы увидите, что многие теги содержат атрибуты class - bootstrap содержит шаблоны, как такие элементы красиво оформить -->
+
+	</head>
+	
+<!-- body - главная, содержательная часть страницы. Контент на этой странице делится на меню (nav), "шапку" (header), "подвал" (footer) и все остальное (мы заключили остаток в тег section) -->	
+	<body>
+
+<!-- меню (navigation bar) -->
+
+		<nav id="mainNav" class="navbar navbar-default navbar-fixed-top navbar-custom" style="background-color:snow ">
+
+<!-- div - это контейнеры - коробочки с текстом и/или графикой, которые можно вкладывать друг в друга. Пристально смотреть на теги в этой части кода не нужно -->
+			<div class="container"> 
+				<div class="navbar-header"> 
+					<a href="https://ling.hse.ru/" class="navbar-brand">Школа лингвистики НИУ ВШЭ</a> 
+				</div> 
+				<nav class="collapse navbar-collapse" id="bs-navbar"> 
+					<ul class="nav navbar-nav navbar-right"> 
+						<li> <a href="https://lingvocodes.github.io/HSEinfo/ba-ling-2021/index.html">Страница курса</a> </li> 
+						<li> <a href="https://lingvocodes.github.io/HSEinfo/ba-ling-2021/latin_3.html">Страница группы</a> </li> 
+<!-- поправьте номер группы в URL, если нужно (от 1 до 4) -->
+					</ul>
+				</nav> 
+			</div>
+		</nav>
+
+<!-- начинается шапка. у тега header есть атрибут style, который задает цвет фона и отступы. поменяйте значения атрибутов и посмотрите, как изменится страница -->
+<font face="Georgia">
+		<header style="background-color:antiquewhite; padding-top:70px; "> 
+			<div class="container"> 
+				<div class="row">
+					<div class="col-md-4">
+						<br><br>
+<!-- здесь и дальше нужно поменять весь содержательный текст, чтобы получилась ваша личная страница -->
+						<h1><b>Анастасия</b></h1>
+						<h1 align="right"><b>Саунина</b></h1>
+						<hr> <!-- это горизонтальная линия -->
+						<p><i>Человек, умеющий <b>создавать HTML</b></i> <small><i>(или нет?)</i></small></p> 
+					</div>
+					<div class="col-md-4">
+<!-- img - тег для вставки изображений. Мы использовали атрибут style, чтобы задать размер изображения и ширину рамки-->
+<!-- Измените URL на URL вашей фотографии, а также настройте размер изображения -->
+<img src="https://github.com/asaunina/lingdata/blob/main/mywebpage/me.jpg?raw=true" style="height:350px; margin:20px 20px 40px 20px; border-radius: 30px" >
+					</div>
+					<div class="col-md-3">
+						<br><br><br><br><br>
+						<p><i>я мечтаю... </i></p>
+						<p align="right"><i>...объехать всю страну</i></p>
+						<p><i>и облететь полмира...</i></p>
+						<p align="right"><i>...и найти общий "язык"</i></p>
+						<p><i>с людьми...</i></p>
+						<p align="right"><i>...которые повстречаются</i></p>
+						<p><i>мне на пути...</i></p>
+					</div>
+				</div>
+			</div>
+		</header>
+
+<!-- часть страницы, которая под шапкой -->
+		<section id="portfolio" style="background-color:snow">
+			<div class="container">
+
+<!-- атрибут col-md-... говорит, что контент будет разделен на несколько столбцов, их ширина соотносится как 3 - 6 - 3 (Bootstrap использует воображаемую сетку из 12 равных по ширине колонок) -->
+				<div class="col-md-3">
+
+<!-- <article> не влияет на оформление, но помогает структурировать контент на осмысленые разделы -->
+					<article style ="background-color:snow">
+						<p> </p>
+					</article>
+					<article style ="background-color:antiquewhite; padding: 20px; border-radius: 30px">
+						<h3><b>Место учебы</b></h2>
+						<p>Фундаментальная и прикладная лингвистика, НИУ ВШЭ, Москва</p>
+					</article>
+					<article style ="background-color:snow">
+						<p> </p>
+					</article>
+					<article style ="background-color:antiquewhite; padding: 20px; border-radius: 30px">
+						<h3><b>Родной город</b></h2>
+						<p>Владимир </p>
+					</article>
+					<article style ="background-color:snow">
+						<p> </p>
+					</article>
+					<article style ="background-color:antiquewhite; padding: 20px; border-radius: 30px">
+						<h3><b>Школа</b></h2>
+<!-- когда будете менять текст, не используйте бюрократических слов типа ГБОУ СОШ, ну пожаалуйста -->
+						<p><i>2011-2020:</i> Гимназия №3, <i>Владимир</i></p>
+						<p><i>2020-2022:</i> Лицей НИУ ВШЭ, <i>Москва</i></p>
+					</article>
+				</div>
+
+				<div class="col-md-6">
+					<article style ="background-color:snow">
+						<p> </p>
+					</article>
+					<article style ="background-color:antiquewhite; padding: 20px; border-radius: 30px">
+						<h3><b>Немного обо мне <i><small>(и моем коте)</small></i></b></h2>
+						<img src="https://github.com/asaunina/lingdata/blob/main/mywebpage/mycat.jpg?raw=true" align="right" style="height:190px; border-radius: 30px" >
+						<h4> <i> Мои интересы: </i> </h4> 
+						<ul> 
+							<li> рисование <i>(красный диплом в художке!)</i> </li>
+							<li> игра на фортепиано </li>
+							<li> игра в шахматы <i>(первый взрослый разряд!)</i> </li>
+						    <li> изучение иностранных языков <i>(английский, французский, немецкий)</i></li>
+							<li> лингвистика <i>(мечта!..)</i></li>
+						</ul>
+						А еще у меня есть кот! <br>
+						Его зовут Хеврик и у него есть свой инстаграм! </p>
+						<h4><i>Моя любимая музыка:</i></h4>
+						<ul>
+							<li> <a href = "https://www.youtube.com/watch?v=f8QmHs8aqCE"> ABBA - I let the Music speak </a> </li>
+							<li> <a href = "https://www.youtube.com/watch?v=ycprr4iYLTA"> Jeanne Moreau - Le tourbillon </a> </li>
+							<li> <a href = "https://www.youtube.com/watch?v=zJ00slYj0_o"> ABBA - I still have Faith in you </a> </li>
+							<li> <a href = "https://www.youtube.com/watch?v=sySlY1XKlhM"> B J Thomas - Raindrops keep falling on my Head </a> </li>
+							<li> <a href = "https://www.youtube.com/watch?v=TSpiwK5fig0"> The Beatles - All my Loving </a> </li>
+							<li> <a href = "https://www.youtube.com/watch?v=J1xXu-18Zb0"> Extreme - More than Words </a> </li>
+							<li> <a href = "https://www.youtube.com/watch?v=0dcbw4IEY5w"> ABBA - Thank you for the music </a> </li>
+							<li> и много чего еще... </li>
+						</ul>
+					</article>
+				</div>
+
+				<div class="col-md-3" >
+					<article style ="background-color:snow">
+						<p> </p>
+					</article>
+					<article style ="background-color:antiquewhite; padding: 20px; border-radius: 30px">
+						<h3><b>Я в соцсетях</b></h3>
+<!-- тег <ul> - unordered list. Еще бывает тег <ol> -->
+						<ul>
+							<li> <ins> <a href = "https://vk.com/aasaunina"> VK </a> </ins> </li>
+							<li> <ins> <a href = "https://www.instagram.com/aasaunina">Instagram</a></ins></li>
+							<li> <ins><a href = "https://t.me/asaunina">Telegram</a></ins></li>
+						</ul>
+						<h3><b>Мой кот в соцсетях</b></h3>
+						<ul>
+							<li> <ins> <a href = "https://www.instagram.com/hevrik_the_bengal"> Instagram </a> </ins> </li>
+						</ul>
+						<p> Подписывайтесь на нас! </p>
+					</article>					
+					<article style ="background-color:snow">
+						<p> </p>
+					</article>
+					<article style ="background-color:antiquewhite; padding: 20px; border-radius: 30px">
+						<h3><b> Моя книга </b></h3>
+						<p> Когда я училась в лицее, я написала книгу на тему "Как избавиться от стресса". Посмотреть и скачать ее можно по <ins> <a href = "https://docs.yandex.ru/docs/view?url=ya-disk%3A%2F%2F%2Fdisk%2Fpublishing_saunina_book.pdf&name=publishing_saunina_book.pdf&uid=1316648214&nosw=1">ссылке</a></ins>!</p>
+					</article>
+				</div>
+			</div>
+		</section>
+
+<!-- это подвал. В этой части страницы обычно ставят копирайт (с помощью символа &copy;) и пишут об истории создания страницы. Поставьте свой копирайт -->
+				
+
+		<footer class="bs-docs-footer" style="background-color:snow"> 
+			<div class="container"> 
+				<p style="text-align:right">
+				<br>
+				&copy; А. Саунина, 2022</p> 
+			</div>
+		</footer>
+	</body>
+</font>
+</html>

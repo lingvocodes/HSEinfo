@@ -1,0 +1,84 @@
+body {
+    max-width: 1000px; /* ограничение максимальной ширины  */
+    margin: 0 auto;
+}
+
+/* для всех блоков внутри body изменяем алгоритм расчета ширины блоков и добавляем все блокам поля 10px */
+body div {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 10px;
+}
+
+.header {
+    background: #CCA69E;
+    padding: 10px;
+/*	margin-bottom: 10px;*/
+}
+
+.left-side {
+    width: 60%;
+    background: white;
+    float: left;
+}
+
+.right-side {
+    width: 40%;
+	height: 348px;
+    background: white;
+    float: left;
+
+    background-image: url('photo.jpg');
+    background-position: center center;
+}
+
+.footer {
+    background: white;
+    clear: both; /* запрещаем обтекание с обоих сторон, блок выводится с новой строки */
+    color: #ccc;
+}
+.par{
+	color: black;
+	font-size: 20px;
+	font-style: normal;
+	font-weight: normal;
+}
+.val{
+	font-size: 20px;
+	 font-style: italic;
+	 font-weight: normal;
+	 color: black;
+}
+.cheese-crud{
+	font-size: 30px;
+	font-style: normal;
+	/*normal; oblique; italic */
+	color: black;
+}
+.foot-text{
+	font-size: 20px;
+	font-style: normal;
+	color: black;
+}
+.head-text{
+	font-size: 20px;
+	font-style: italic;
+	color: black;
+}
+li{
+	list-style-type: square;
+	/* upper-roman; lower-alpha; circle;*/ 
+	font-size: 20px;
+	font-style: normal;
+	color: black;
+}
+
+
+table{
+	padding: 10px;
+	border-collapse;
+	color: white;
+	border: 1px solid;
+	width: 100%;
+}	

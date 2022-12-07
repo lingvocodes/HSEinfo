@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="ru" >
+<head>
+<meta charset="UTF-8">
+<title>Личная страница Ильи Коровай</title>
+    <style type="text/css">
+        a{
+        color: #fff;
+        text-decoration: none;
+        }
+        html{
+        background: #FFF8CC;
+        min-height: 100%;
+        font-family: Helvetica;
+        display: flex;
+        flex-direction: column;
+        }
+        .logo{
+        font-size: 1.5rem;
+        color: #fff;
+        text-decoration: none;
+        margin: 5px 0 0 5px;
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        flex: none;
+        align-items: center;
+        background: SlateGrey;
+        width: 130px;
+        height: 50px;
+        }
+        body{
+        margin: 0;
+        padding: 0 15px;
+        display: flex;
+        flex-direction: column;
+        flex: auto;
+        }
+        h1{
+        margin-top: 0;
+        }
+        h1, p{
+        color: #006064;
+        justify-content: center;
+        }
+        img{
+        border: 0;
+        }
+        .header{
+        width: 100%;
+        min-width: 460px;
+        max-width: 960px;
+        margin: 0 auto 30px;
+        padding: 30px 0 10px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        box-sizing: border-box;
+        }
+        .nav{
+        margin: -5px 0 0 -5px;
+        display: flex;
+        flex-wrap: wrap;
+        }
+        .nav-item{
+        background: SlateGrey;
+        width: 130px;
+        height: 50px;
+        font-size: 1.5rem;
+        color: #fff;
+        text-decoration: none;
+        display: flex;
+        margin: 5px 0 0 5px;
+        justify-content: center;
+        align-items: center;
+        }
+        .main{
+        width: 100%;
+        min-width: 460px;
+        max-width: 960px;
+        margin: auto;
+        flex: auto;
+        box-sizing: border-box;
+        }
+        .box{
+        font-size: 1.25rem;
+        line-height: 1.5;
+        margin: 0 0 40px -50px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        }
+        .box-base{
+        margin-left: 50px;
+        flex: 1 0 430px;
+        justify-content: center;
+        }
+        .content{
+        margin-bottom: 30px;
+        display: flex;
+        flex-wrap: wrap;
+        }
+        .banners{
+        flex: 1 1 200px;
+        }
+        .banner{
+        background: SlateGrey;
+        width: 100%;
+        min-width: 100px;
+        min-height: 200px;
+        font-size: 3rem;
+        color: #fff;
+        margin: 0 0 30px 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        }
+        .posts{
+        margin: 0 0 30px 30px;
+        flex: 1 1 200px;
+        }
+        .footer{
+        background: SlateGrey;
+        width: 100%;
+        max-width: 960px;
+        min-width: 460px;
+        color: #fff;
+        margin: auto;
+        padding: 15px;
+        box-sizing: border-box;
+        }
+        @media screen and  (max-width: 800px) {
+        .banners{
+        margin-left: -30px;
+        display: flex;
+        flex-basis: 100%;
+        }
+        .banner{
+        margin-left: 30px;
+        }
+        .posts{
+        margin-left: 0;
+        }
+        }
+        @media screen and  (max-width: 600px) {
+        .content{
+        display: block;
+        }
+        .banners{
+        margin: 0;
+        display: block;
+        }
+        .banner{
+        margin-left: 0;
+        }
+        .posts{
+        margin: 0;
+        }
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <a class="logo" href="https://ling.hse.ru/">НИУ ВШЭ</a>
+             <nav class="nav">
+                <a href="#posts" class="nav-item">О себе</a>
+                <a href="#footer" class="nav-item">Контакты</a>
+             </nav>
+    </header>
+    <main class="main">
+    <div class="box">
+        <div class="box-base">
+            <h1 align="center">Коровай Илья Александрович</h1>
+            <p align="center">Всем привет. Давайте знакомиться!</p>
+        </div>
+        <div >
+        <img src="https://github.com/kukurydzaaa/lingdata/blob/main/mywebpage/photo_2022-11-29_22-21-53.jpg?raw=true" style="height:320px; margin:30px 30px 50px 30px; " >
+         </div>
+        <div class="content">
+            <div class="banners">
+                <div class="banner"> Школа </div>
+                <div class="banner"> Увлечения</div>
+                <div class="banner"> ВУЗ</div>
+            </div>
+            <div class="posts"  id="posts" align="justify">
+                <div class="post" >
+                <p>Я учился в  Тираспольской гуманитарно-математической гимназии, самой старой школе города и республики. В 2023 году гимназии исполнится 130 лет.</p><br/><br/>
+                </div>
+                <div class="post">
+                <p>Мои увлечения преимущественно связаны с изучением различных языков. Началось все с английского языка, его я учу дольше всех. Потом меня привлекали языки различных народов мира . Затем я начал изучать румынский язык, потом польский, болгарский, турецкий, гагаузский.</p><br/>
+                </div>
+                <div class="post">
+                <p>Сейчас я студент 1 курса НИУ ВШЭ. Люблю море и горные лыжи. Добрый и позитивный, в помощи никому не откажу. Я с детства коллекционирую монеты и банкноты и знаю историю многих денежных знаков стран мира.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    </main>
+    <footer class="footer"  id="footer">
+        <div >
+            <br/><a style= float:left; margin-right:30px; href="https://github.com/kukurydzaaa"><img src="https://github.com/kukurydzaaa/lingdata/blob/main/mywebpage/photogit.jpg?raw=true"   ></a> 
+            <a  style=float:left;  href="https://t.me/o_kukurydza_o"><img src="https://github.com/kukurydzaaa/lingdata/blob/main/mywebpage/phototg.jpg?raw=true"  ></a>
+            <p style=text-align:right;> <font color="white">&copy; Илья Коровай, 2022</font></p> 
+        </div>
+    </footer>
+</body>
+</html>

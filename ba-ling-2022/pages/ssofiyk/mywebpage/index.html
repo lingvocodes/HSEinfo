@@ -1,0 +1,129 @@
+<!doctype html>
+
+<!-- так в HTML обозначаются комментарии. Выше вы видите объявление типа документа (DOCTYPE), так браузер понимает, что код ниже нужно интерпретировать как html -->
+
+<html>
+
+<!-- зона заголовка html, тег <title> - строка, которую браузер отображает на вкладках над страницами, <meta> и <link> сообщают технические сведения для браузера, например, что файл имеет кодировку Юникод (utf-8) -->
+
+	<head>
+        <font face="candara">
+		<title>Личная страница Cони Герен</title>
+	 	<!-- Required meta tags -->
+	 	<meta charset="utf-8">
+	 	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+		<meta name="description" content="Личная страница и контакты">
+
+		<!-- Bootstrap Core CSS -->
+		<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" media="screen">
+<!-- Эта страница сделана с помощью bootstrap - популярной библиотеки для создания и настройки сайтов. Ниже вы увидите, что многие теги содержат атрибуты class - bootstrap содержит шаблоны, как такие элементы красиво оформить -->
+
+	</head>
+	
+<!-- body - главная, содержательная часть страницы. Контент на этой странице делится на меню (nav), "шапку" (header), "подвал" (footer) и все остальное (мы заключили остаток в тег section) -->	
+	<body>
+
+<!-- меню (navigation bar) -->
+
+		<nav id="mainNav" class="navbar navbar-default navbar-fixed-top navbar-custom">
+
+<!-- div - это контейнеры - коробочки с текстом и/или графикой, которые можно вкладывать друг в друга. Пристально смотреть на теги в этой части кода не нужно -->
+			<div class="container"> 
+				<div class="navbar-header"> 
+					<a href="https://ling.hse.ru/" class="navbar-brand">Школа лингвистики НИУ ВШЭ</a> 
+				</div> 
+				<nav class="collapse navbar-collapse" id="bs-navbar"> 
+					<ul class="nav navbar-nav navbar-right"> 
+						<li> <a href="https://lingvocodes.github.io/HSEinfo/ba-ling-2021/index.html">Страница курса</a> </li> 
+						<li> <a href="https://lingvocodes.github.io/HSEinfo/ba-ling-2021/latin_3.html">Страница группы</a> </li> 
+<!-- поправьте номер группы в URL, если нужно (от 1 до 4) -->
+					</ul>
+				</nav> 
+			</div>
+		</nav>
+
+<!-- начинается шапка. у тега header есть атрибут style, который задает цвет фона и отступы. поменяйте значения атрибутов и посмотрите, как изменится страница -->
+
+		<header style="background-color:rgb(203, 199, 144); padding-top:70px; "> 
+			<div class="container"> 
+				<div class="row">
+					<div class="col-md-3">
+						<br><br>
+<!-- здесь и дальше нужно поменять весь содержательный текст, чтобы получилась ваша личная страница -->
+						<h1>Соня Герен</h1>
+						<hr> <!-- это горизонтальная линия -->
+						<p>Человек, <i><b><big>не любящий</big></b></i> зиму</p> 
+					</div>
+					<div class="col-md-4">
+<!-- img - тег для вставки изображений. Мы использовали атрибут style, чтобы задать размер изображения и ширину рамки-->
+<!-- Измените URL на URL вашей фотографии, а также настройте размер изображения -->
+<img src="https://github.com/ssofiyk/lingdata/blob/main/mywebpage/photo/photo_2022-11-27_14-29-43.jpg?raw=true" style="height:350px; margin:20px 20px 40px 20px; " >
+					</div>
+                    <div class="col-md-4">
+<!-- img - тег для вставки изображений. Мы использовали атрибут style, чтобы задать размер изображения и ширину рамки-->
+<!-- Измените URL на URL вашей фотографии, а также настройте размер изображения -->
+<img src="https://github.com/ssofiyk/lingdata/blob/main/mywebpage/photo/photo_2022-11-27_14-25-39.jpg?raw=true" style="height:350px; margin:20px 20px 40px 20px; " >
+					</div>
+				</div>
+			</div>
+		</header>
+
+<!-- часть страницы, которая под шапкой -->
+		<section id="portfolio">
+			<div class="container">
+
+<!-- атрибут col-md-... говорит, что контент будет разделен на несколько столбцов, их ширина соотносится как 3 - 6 - 3 (Bootstrap использует воображаемую сетку из 12 равных по ширине колонок) -->
+				<div class="col-md-3">
+
+<!-- <article> не влияет на оформление, но помогает структурировать контент на осмысленые разделы -->
+					<article>
+						<h3><font color="#8C6912">Место учебы</font></h2>
+						<p><font size="3">Фундаментальная и прикладная лингвистика, НИУ ВШЭ, Москва</font></p>
+					</article>
+					<article>
+						<h3><font color="#8C6912">Родной город</font></h2>
+						<p><font size="3">Москва</font></p>
+					</article>
+					<article>
+						<h3><font color="#8C6912">Школа</font></h2>
+<!-- когда будете менять текст, не используйте бюрократических слов типа ГБОУ СОШ, ну пожаалуйста -->
+						<p><font size="3">179</font></p>
+					</article>
+				</div>
+
+				<div class="col-md-7">
+					<article>
+						<h3><font color="#8C6912">7 рандомных фактов обо мне!</font></h2>
+                        <font size="3" color="#403A3A">
+                        <ul><li>Мою черепашку зовут Лейла и она старше меня</li>
+                        <li>Топ-3 моих любимых городов России (не считая Москву и Петербуг) — Казань, Чебоксары, Нижнекамск</li>
+                        <li>У меня нет отчества</li>
+                        <li>Я очень люблю пирожки с капустой, но мне их нельзя  :(</li>
+                        <li>У меня огромная коллекция открыток, когда-то даже занималась посткроссингом!</li>
+                        <li>Обожаю играть в большой теннис</li>
+                        <li>Моя любимая цифра — 7, поэтому фактов тоже 7 :)</li><ul></font>
+					</article>
+				</div>
+
+				<div class="col-md-2">
+					<h3><font color="#8C6912">Я в соцсетях</font></h3>
+<!-- тег <ul> - unordered list. Еще бывает тег <ol> -->
+					<ul>
+						<li><a href="https://vk.com/sonyag">VK</a> </li>
+						<li><a href="https://t.me/ssofiyk">Telegram</a></li>
+						<li><a href="https://instagram.com/ssofiykk?igshid=YmMyMTA2M2Y=">Instagram</a></li>
+					</ul>
+				</div>
+			</div>
+		</section>
+
+<!-- это подвал. В этой части страницы обычно ставят копирайт (с помощью символа &copy;) и пишут об истории создания страницы. Поставьте свой копирайт -->
+		<footer class="bs-docs-footer"> 
+			<div class="container"> 
+				<p style="text-align:right; ">&copy; С. Герен, 2022</p> 
+        </font>
+			</div>
+		</footer>
+	</body>
+</html>

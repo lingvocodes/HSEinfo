@@ -1,0 +1,154 @@
+<!doctype html>
+
+<!-- так в HTML обозначаются комментарии. Выше вы видите объявление типа документа (DOCTYPE), так браузер понимает, что код ниже нужно интерпретировать как html -->
+
+<html>
+
+<!-- зона заголовка html, тег <title> - строка, которую браузер отображает на вкладках над страницами, <meta> и <link> сообщают технические сведения для браузера, например, что файл имеет кодировку Юникод (utf-8) -->
+
+	<head>
+		<title>Личная страница Вероники Царевой</title>
+	 	<!-- Required meta tags -->
+	 	<meta charset="utf-8">
+	 	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+		<meta name="description" content="Личная страница и контакты">
+
+		<!-- Bootstrap Core CSS -->
+		<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" media="screen">
+<!-- Эта страница сделана с помощью bootstrap - популярной библиотеки для создания и настройки сайтов. Ниже вы увидите, что многие теги содержат атрибуты class - bootstrap содержит шаблоны, как такие элементы красиво оформить -->
+
+	</head>
+	
+<!-- body - главная, содержательная часть страницы. Контент на этой странице делится на меню (nav), "шапку" (header), "подвал" (footer) и все остальное (мы заключили остаток в тег section) -->	
+	<body style="font-family:Georgia">
+
+<!-- меню (navigation bar) -->
+
+		<nav id="mainNav" class="navbar navbar-default navbar-fixed-top navbar-custom">
+
+<!-- div - это контейнеры - коробочки с текстом и/или графикой, которые можно вкладывать друг в друга. Пристально смотреть на теги в этой части кода не нужно -->
+			<div class="container"> 
+				<div class="navbar-header"> 
+					<a href="https://ling.hse.ru/" class="navbar-brand">Школа лингвистики НИУ ВШЭ</a> 
+				</div> 
+				<nav class="collapse navbar-collapse" id="bs-navbar"> 
+					<ul class="nav navbar-nav navbar-right"> 
+						<li> <a href="https://lingvocodes.github.io/HSEinfo/ba-ling-2021/index.html">Страница курса</a> </li> 
+						<li> <a href="https://lingvocodes.github.io/HSEinfo/ba-ling-2021/latin_2.html">Страница группы</a> </li> 
+<!-- поправьте номер группы в URL, если нужно (от 1 до 4) -->
+					</ul>
+				</nav> 
+			</div>
+		</nav>
+
+<!-- начинается шапка. у тега header есть атрибут style, который задает цвет фона и отступы. поменяйте значения атрибутов и посмотрите, как изменится страница -->
+
+		<header style="background-color:#8B0000; padding-top:60px; "> 
+			<div class="container"> 
+				<div class="row">
+					<div class="col-md-6">
+						<br><br>
+<!-- здесь и дальше нужно поменять весь содержательный текст, чтобы получилась ваша личная страница -->
+						<h2 style="color:black"> <b> Персонаж №17: Вероника Царева </b> </h2> <br>
+						<h4 style="color:black"> Тип личности: ISTP (виртуоз) </h4> <br>
+						<h4 style="color:black"> День рождения: 12 января </h4> <br>
+						<h4 style="color:black"> Знак зодиака: Козерог </h4> <br>
+						<h4 style="color:black"> Асцендент: Весы </h4> <br>
+						<h4 style="color:black"> Способы связи: <a style="color:black" href="https://vk.com/fromdeath2morning">VK</a> | <a style="color:black" href="https://t.me/fromdeath2morning">Telegram</a> | <a style="color:black" href= "mailto:veronika_tsareva@bk.ru">E-mail</a> </h4> <br>
+					</div>
+
+
+					<div class="col-md-6">
+<!-- img - тег для вставки изображений. Мы использовали атрибут style, чтобы задать размер изображения и ширину рамки-->
+<!-- Измените URL на URL вашей фотографии, а также настройте размер изображения -->
+						<img src="https://raw.githubusercontent.com/veronikatsareva/lingdata/main/mywebpage/my_personal_photo.jpg" style="height:450px; margin:20px 20px 20px 20px;" align="right" alt="Veronika Tsareva">
+					</div>
+
+				</div>
+			</div>
+		</header>
+
+<!-- часть страницы, которая под шапкой -->
+		<section id="portfolio">
+			<div class="container">
+
+<!-- атрибут col-md-... говорит, что контент будет разделен на несколько столбцов, их ширина соотносится как 3 - 6 - 3 (Bootstrap использует воображаемую сетку из 12 равных по ширине колонок) -->
+				<div class="col-md-4">
+
+<!-- <article> не влияет на оформление, но помогает структурировать контент на осмысленые разделы -->
+					<article>
+						<h2 style="color:#8B0000"><b>Опыт работы</b></h2>
+<!-- когда будете менять текст, не используйте бюрократических слов типа ГБОУ СОШ, ну пожаалуйста -->
+						<p> <b> Лицей НИУ ВШЭ</b> &nbsp;&nbsp;&nbsp; 09.2020 — 12.2021</p> <br>
+					</article>
+					
+					<article>
+						<h2 style="color:#8B0000"><b>Образование</b></h2>
+
+						<p style="color:black"> <b> Фундаментальная и компьютерная лингвистика, НИУ ВШЭ </b> &nbsp;&nbsp;&nbsp; 09.2022 — н.в. </p> 
+
+						<p style="color:black"> <b> Прикладная математика и информатика, НИУ ВШЭ </b> &nbsp;&nbsp;&nbsp; 09.2020 — 12.2021 </p>
+
+						<p style="color:black"> <b> Лицей НИУ ВШЭ </b> &nbsp;&nbsp;&nbsp; 09.2018 — 06.2020 </p>
+
+						<p style="color:black"> <b> Школа №1415 </b> &nbsp;&nbsp;&nbsp; 09.2009 — 06.2018 </p>
+					</article>
+
+				</div>
+
+				<div class="col-md-4">
+					<article>
+						<h2 style="color:#8B0000"><b>Хобби & Умения</b></h2>
+						<p style="color:black"> Пишу на Python и С++, периодически пользуюсь LaTeX. Не могу не поделиться лучшим мемом про C++.</p>
+
+						<p style="color:black"> По причине своей любви к красно-черным сочетаниям цветов называю себя <a style="color:#8B0000" href="https://en.cppreference.com/w/cpp/container/map">std::map</a> или <a style="color:#8B0000" href="https://en.cppreference.com/w/cpp/container/set">std::set</a>. </p>
+
+						<p style="color:black"> В рамках летней практики после 1 курса ПМИ я написала телеграм-бота, который с помощью API-сервисов мог подбирать для просмотра аниме-сериал, выдавать текущее расписание онгоингов и рандомную цитату из аниме или манги. </p>
+
+						<p style="color:black"> Рисую акрилом, маслом, карандашами, маркерами, чем угодно, графическим планшетом в том числе. </p>
+
+						<p style="color:black"> С детства люблю научную фантастику, детективы и концепт путешествий во времени. </p>
+
+						<p style="color:black"> Активно бегаю по рок-концертам с 2018 года. </p>
+
+						<p style="color:black"> Не представляю свою жизнь без металкора. Две мои самых любимых группы в этом жанре и вообще в жизни это <a style="color:#8B0000" href="https://wearethekorea.ru/">The Korea</a> и <a style="color:#8B0000" href="https://invertor.bandcamp.com/">Invertor</a>.</p>
+
+						<p style="color:black"> С недавнего времени заполняю просмотренные фильмы на <a style="color:#8B0000" href="https://letterboxd.com/arrrhythmiaa/">Letterboxd</a>. </p>
+
+						<p style="color:black"> У меня отмечено 5789 просмотренных эпизодов телесериалов, аниме и мультсериалов на MyShows.</p>
+
+						<p style="color:black"> Примерно раз в год я вспоминаю о том, что у меня есть гитара.</p>
+
+						<p style="color:black"> Очень хочется поделиться моим любимым граффити, который существовал во временном отрезке 2018 года на Дизайн-завод Флаконе, но сейчас он канул в небытие.</p>
+
+					</article>
+
+				</div>
+
+				<div class="col-md-4">
+					<article>
+						<div class="col-md-4">
+				<img src="https://raw.githubusercontent.com/veronikatsareva/lingdata/main/mywebpage/meme.JPG" style="height:400px; margin:20px 10px 20px 10px;" align="left" alt="my favourite meme">
+
+				<img src="https://raw.githubusercontent.com/veronikatsareva/lingdata/main/mywebpage/graffity.jpg" style="height:400px; margin:20px 10px 20px 10px;" align="left" alt="my favourite graffity">
+				
+				</div>
+
+					</article>
+
+				</div>
+
+			</div>
+
+		</section>
+
+<!-- это подвал. В этой части страницы обычно ставят копирайт (с помощью символа &copy;) и пишут об истории создания страницы. Поставьте свой копирайт -->
+
+		<footer class="bs-docs-footer"> 
+			<div class="container"> 
+				<p style="text-align:right; ">&copy; Вероника Царева, Ноябрь 2022</p> 
+			</div>
+		</footer>
+	</body>
+</html>

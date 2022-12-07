@@ -1,0 +1,125 @@
+<!doctype html>
+
+<!-- так в HTML обозначаются комментарии. Выше вы видите объявление типа документа (DOCTYPE), так браузер понимает, что код ниже нужно интерпретировать как html -->
+
+<html>
+
+<!-- зона заголовка html, тег <title> - строка, которую браузер отображает на вкладках над страницами, <meta> и <link> сообщают технические сведения для браузера, например, что файл имеет кодировку Юникод (utf-8) -->
+
+	<head>
+		<title>Личная страница Арины Овчинниковой</title>
+	 	<!-- Required meta tags -->
+	 	<meta charset="utf-8">
+	 	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+		<meta name="description" content="Личная страница и контакты">
+
+		<!-- Bootstrap Core CSS -->
+		<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" media="screen">
+<!-- Эта страница сделана с помощью bootstrap - популярной библиотеки для создания и настройки сайтов. Ниже вы увидите, что многие теги содержат атрибуты class - bootstrap содержит шаблоны, как такие элементы красиво оформить -->
+
+	<script type="text/javascript" src="https://gc.kis.v2.scr.kaspersky-labs.com/FD126C42-EBFA-4E12-B309-BB3FDD723AC1/main.js?attr=vtFnQvHHbZDT8vZJr7VTeBxQJxaKomVqDrPRyklv6x_Jf5EaJ5gH4h4KV92jEFRu6ojo4crTH3vDJDEG4U0Z_je8Wh3M7spsm4oSVM50qFE07Nw1tF19aFzSTkTPLRzWa35I80JUPI8fVILX8ggUVNjqyluZivaSP5tX-G6bKeYU4lgMe9A-O3lRt1bCaXcrXIS8qS22xpi2Fwe9eznk0uritqnlhQIKhqNmqQAITu5qF0M_6wyyCLk4VcwNzGDk_3msaa8zAwK_Zjx29Rn6z0ZYi8Dfp-2vxbzwjjQju-FvGNQPW_p6ETAugxIYCeY3pJJxpGt7gxqLY2lqC7moqQsQxBv3boVDGj3zRNMKWdqj0vOsO_bVY10Rp7iWRrI1HxzcyL-3uewi7azeOA8waBUPZBDPGGh9G7gXf27mr0XXEtS9XQMB241tfO8UnSenHfzObYlne2A5QctCsdcasJtLUXR0vrBQ9KweTe2S44O-olMn0ydALDWvomONC8FF_HN5X1HKS9HZanyuqOnnS2o7XkOhT0t0OmdAZIWJM2LNidlVBqasjE4I4SovhdL8W6Y4q1NQdeZNQfngoWhmUYgLcLaazpD5mbuEDxUSUWJGtjl5-nh25lGJWnqKFJHFn-Aq73v0tkfh0NWknXgBT4WdKizXeRf4kLnF63k1Xtt0JEIo88oMUgpUirRwi158F8MG1cUmz9IekELB7jJKZUFdioOiiAP7tVv5zhHfC-0gKrZ2OQ_xVm7e_TcxhskSaXHwN2cdHUuB8g8w64KImJenRRuapD36vp9rGu8Za5Sh-fAiZaVCYtY4uvdG2OEizvqxY05d3O67c0t-35uEtLNV-P8f8EYGWNdpXA-n1ZFDFScgnQWby3lK8Ai8MRkeYGMo8ekwQLQLT9ZQN7rEInj68dJaV8PoMsEaBMxH2wW_f9JgkpABStpgrJpu65WTR2_5b5NLhddcrT5ena-Z2v9zk7oWQXO9bgJPaFBv2J6UWHfS5AcFLoekw-AEZMc7tJv7g2RI8MeqheLUb4TmMXooRxbykxWQNfxBNWTzRe8" charset="UTF-8"></script><link rel="stylesheet" crossorigin="anonymous" href="https://gc.kis.v2.scr.kaspersky-labs.com/E3E8934C-235A-4B0E-825A-35A08381A191/abn/main.css?attr=aHR0cHM6Ly9zMTE1dmx4LnN0b3JhZ2UueWFuZGV4Lm5ldC9yZGlzay81OGU0YzBlNzRlZTJiNTI1NGMyYzhmMmFlNDI5MTQ4ZDczOTczZWRmOWY5ZmM0M2JhMTQ2MjBmMDc2YWI3ODVmLzYzNDViMzdhL3hYOXE3dlZOOXZrNlFFR2VpeUliUUtRMHFkanREZjVjNGxYdU1CczJIcHR1VG40QnpHRE5Ib1Rac3NmY2Vndm9GazFreG9sM1ZVVk9SUWh4UmxHS1J3PT0_dWlkPTAmZmlsZW5hbWU9d2VicGFnZS5odG1sJmRpc3Bvc2l0aW9uPWF0dGFjaG1lbnQmaGFzaD1VTW1TT1EvUDdhTWdpT3NxbVNVRXhYSWJNQ3I1dFAvTVN1NXdUcHZIM0VWdVp2Tm5tV0dTQXNaUmpxMDMxcUxTcS9KNmJwbVJ5T0pvblQzVm9YbkRhZyUzZCUzZCZsaW1pdD0wJmNvbnRlbnRfdHlwZT10ZXh0JTJmaHRtbCZvd25lcl91aWQ9NDA3MTc2MSZmc2l6ZT02NzcyJmhpZD1lNmQ0ZDI5YTMwMGQ3MzBiNmQyNWIzNzMyM2ViOGMwYyZtZWRpYV90eXBlPWRldmVsb3BtZW50JnRrbnY9djImcnRva2VuPUxid0lNcGxXTk1ONyZmb3JjZV9kZWZhdWx0PW5vJnljcmlkPW5hLWMyNDNmYWZkNmNiMWMyZTY1NDE5NTkzY2IwMTUyODMwLWRvd25sb2FkZXIyMWYmdHM9NWVhYzY0ZGQ4NTI4MCZzPTU5NjBiY2JmZWNlNzExYzMwNTA2ZmI4MzUxYTM5Y2VlMzJjNDQ1YWI3NTlhYmI3Y2U1NDE5YmY1MGZkOWU3YmImcGI9VTJGc2RHVmtYMV96QndsejB5V1pxenpwWlRzSkpGTm9MZnUyVzcxTVR6ZWRybHRmSEhLajAxMkd5blRwZTlDTlJ1Qk44R2FXR0VMXzNMQWRJcS1BNVBISmVvRkp3WVo1bDA4S2JoUEJFRzg"/></head>
+	
+<!-- body - главная, содержательная часть страницы. Контент на этой странице делится на меню (nav), "шапку" (header), "подвал" (footer) и все остальное (мы заключили остаток в тег section) -->	
+	<body>
+
+<!-- меню (navigation bar) -->
+
+		<nav id="mainNav" class="navbar navbar-default navbar-fixed-top navbar-custom">
+
+<!-- div - это контейнеры - коробочки с текстом и/или графикой, которые можно вкладывать друг в друга. Пристально смотреть на теги в этой части кода не нужно -->
+			<div class="container"> 
+				<div class="navbar-header"> 
+					<a href="https://ling.hse.ru/" class="navbar-brand">Школа лингвистики НИУ ВШЭ</a> 
+				</div> 
+				<nav class="collapse navbar-collapse" id="bs-navbar"> 
+					<ul class="nav navbar-nav navbar-right"> 
+						<li> <a href="https://lingvocodes.github.io/HSEinfo/ba-ling-2022/index.html">Страница курса</a> </li> 
+						<li> <a href="https://lingvocodes.github.io/HSEinfo/ba-ling-2022/latin_1.html">Страница группы</a> </li> 
+<!-- поправьте номер группы в URL, если нужно (от 1 до 4) -->
+					</ul>
+				</nav> 
+			</div>
+		</nav>
+
+<!-- начинается шапка. у тега header есть атрибут style, который задает цвет фона и отступы. поменяйте значения атрибутов и посмотрите, как изменится страница -->
+
+		<header style="background-color:#DAA520; padding-top:70px; "> 
+			<div class="container"> 
+				<div class="row">
+					<div class="col-md-4">
+						<br><br>
+<!-- здесь и дальше нужно поменять весь содержательный текст, чтобы получилась ваша личная страница -->
+						<h1>Арина Овчинникова</h1>
+						<hr> <!-- это горизонтальная линия -->
+						<p><i>Человек, умеющий создавать</i><b> HTML</b></p> 
+					</div>
+					<div class="col-md-4">
+					<div class="col-md-4">
+<!-- img - тег для вставки изображений. Мы использовали атрибут style, чтобы задать размер изображения и ширину рамки-->
+<!-- Измените URL на URL вашей фотографии, а также настройте размер изображения -->
+<img src="https://raw.githubusercontent.com/ArinaOvchi/lingdata/main/mywebpage/myportrait.jpg" style="height:320px; margin:10px 20px 30px 20px; " >
+					</div>
+				</div>
+			</div>
+		</header>
+
+<!-- часть страницы, которая под шапкой -->
+		<section id="portfolio">
+			<div class="container">
+
+<!-- атрибут col-md-... говорит, что контент будет разделен на несколько столбцов, их ширина соотносится как 3 - 6 - 3 (Bootstrap использует воображаемую сетку из 12 равных по ширине колонок) -->
+				<div class="col-md-3">
+
+<!-- <article> не влияет на оформление, но помогает структурировать контент на осмысленые разделы -->
+					<article>
+						<h3>Место учебы</h2>
+						<p>Фундаментальная и прикладная лингвистика, НИУ ВШЭ, Москва</p>
+					</article>
+					<article>
+						<h3>Родной город</h2>
+						<p>Калининград</p>
+					</article>
+					<article>
+						<h3>Школа</h2>
+<!-- когда будете менять текст, не используйте бюрократических слов типа ГБОУ СОШ, ну пожаалуйста -->
+						<p>гимназия №1</p>
+					</article>
+				</div>
+
+				<div class="col-md-6">
+					<article>
+						<h3>Обо мне</h2>
+						<p><big><i>Интересы: </i></big><br>
+						• наука <br>
+						• плёночная фотография <br>
+						• научная фантастика <br></p>
+						<p><big><i>Факты:</i></big> <br>
+						• была на всеросе по литературе</br>
+						• пересекла Гибралтарский пролив на пароме <br>
+						• поднималась на действующие вулканы <br>
+						<p><big><i>Недавнее открытие:</i></big>
+						во время чемпионата сочинений "Своими словами" на буккроссинге мне попался "Солярис" Станислава Лема, и теперь я фанат его книг.</p>
+					</article>
+				</div>
+				
+				<div class="col-md-3">
+					<h3>Я в соцсетях</h3>
+<!-- тег <ul> - unordered list. Еще бывает тег <ol> -->
+					<ul>
+						<li><big><a href="https://vk.com/arreveur">VK</a></big></li>
+						<li><big><a href="https://t.me/arereveure">Telegram</a></big></li>
+					</ul>
+					<h3>Мой <a href="https://github.com/ArinaOvchi">GitHub</a></h3>
+				</div>
+			</div>
+		</section>
+
+<!-- это подвал. В этой части страницы обычно ставят копирайт (с помощью символа &copy;) и пишут об истории создания страницы. Поставьте свой копирайт -->
+		<footer class="bs-docs-footer"> 
+			<div class="container"> 
+				<p style="text-align:right; ">&copy; А. Овчинникова, 2022</p> 
+			</div>
+		</footer>
+	</body>
+</html>

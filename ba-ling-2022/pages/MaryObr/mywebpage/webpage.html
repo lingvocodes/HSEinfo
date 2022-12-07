@@ -1,0 +1,124 @@
+<!doctype html>
+
+<!-- так в HTML обозначаются комментарии. Выше вы видите объявление типа документа (DOCTYPE), так браузер понимает, что код ниже нужно интерпретировать как html -->
+
+<html>
+
+<!-- зона заголовка html, тег <title> - строка, которую браузер отображает на вкладках над страницами, <meta> и <link> сообщают технические сведения для браузера, например, что файл имеет кодировку Юникод (utf-8) -->
+
+	<head style="background-color:#FADADD">
+		<title>Личная страница Маши Обридко</title>
+	 	<!-- Required meta tags -->
+	 	<meta charset="utf-8">
+	 	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+		<meta name="description" content="Личная страница и контакты">
+
+		<!-- Bootstrap Core CSS -->
+		<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" media="screen">
+<!-- Эта страница сделана с помощью bootstrap - популярной библиотеки для создания и настройки сайтов. Ниже вы увидите, что многие теги содержат атрибуты class - bootstrap содержит шаблоны, как такие элементы красиво оформить -->
+
+	</head>
+	
+<!-- body - главная, содержательная часть страницы. Контент на этой странице делится на меню (nav), "шапку" (header), "подвал" (footer) и все остальное (мы заключили остаток в тег section) -->	
+	<body style="background-color:#FADADD">
+
+<!-- меню (navigation bar) -->
+
+		<nav id="mainNav" class="navbar navbar-default navbar-fixed-top navbar-custom">
+
+<!-- div - это контейнеры - коробочки с текстом и/или графикой, которые можно вкладывать друг в друга. Пристально смотреть на теги в этой части кода не нужно -->
+			<div class="container"> 
+				<div class="navbar-header"> 
+					<a href="https://ling.hse.ru/"> Школа лингвистики НИУ ВШЭ</a>
+					
+				</div> 
+				<nav class="collapse navbar-collapse" id="bs-navbar"> 
+					<ul class="nav navbar-nav navbar-right"> 
+						<li> <a href="https://lingvocodes.github.io/HSEinfo/ba-ling-2021/index.html">Страница курса</a> </li> 
+						<li> <a href="https://lingvocodes.github.io/HSEinfo/ba-ling-2021/latin_2.html">Страница группы</a> </li> 
+<!-- поправьте номер группы в URL, если нужно (от 1 до 4) -->
+					</ul>
+				</nav> 
+			</div>
+		</nav>
+
+<!-- начинается шапка. у тега header есть атрибут style, который задает цвет фона и отступы. поменяйте значения атрибутов и посмотрите, как изменится страница -->
+
+		<header style="background-color:#FFC0CB; padding-top:70px; "> 
+			<div class="container"> 
+				<div class="row">
+					<div class="col-md-4">
+						<br><br>
+<!-- здесь и дальше нужно поменять весь содержательный текст, чтобы получилась ваша личная страница -->
+						<h1> <font size="23" color="#8B0000" face="Times New Roman">Маша Обридко</font></h1>
+						<hr> <!-- это горизонтальная линия -->
+						<p><font size="8" color="#8B0000" face="Times New Roman"> <i> Я искал всю жизнь, чтобы любить <b>одну</b></i></font></p> 
+					</div>
+					<div class="col-md-4">
+<!-- img - тег для вставки изображений. Мы использовали атрибут stle, чтобы задать размер изображения и ширину рамки-->
+<!-- Измените URL на URL вашей фотографии, а также настройте размер изображения -->
+<img src="https://sun1-27.userapi.com/s/v1/ig2/ODL4jdAuQOtozpDoKH66zoReU4LuZrFB-5_nbSlfHpNkpBIL4Ac6aYzlHyfw6T2jK4dU9YMxitkCCKZn7NvNIe83.jpg?size=400x400&quality=95&crop=0,0,1707,1707&ava=1"  style="height:350px; margin:20px 20px 40px 20px; " >
+					</div>
+				</div>
+			</div>
+		</header>
+
+<!-- часть страницы, которая под шапкой -->
+		<section id="portfolio">
+			<div class="container">
+
+<!-- атрибут col-md-... говорит, что контент будет разделен на несколько столбцов, их ширина соотносится как 3 - 6 - 3 (Bootstrap использует воображаемую сетку из 12 равных по ширине колонок) -->
+				<div class="col-md-3">
+
+<!-- <article> не влияет на оформление, но помогает структурировать контент на осмысленые разделы -->
+					<article<style="background-color:#FF69B4">
+						<h3><font size="5" color="#8B0000" face="Times New Roman"> <b>Место учебы</b></font></h2>
+						<p> <font size="4" color="#8B0000" face="Times New Roman"><i>Фундаментальная и прикладная лингвистика, НИУ ВШЭ, Москва</i></p>
+					</article>
+					<article>
+						<h3><font size="5" color="#8B0000" face="Times New Roman"><b>Родной город</b></font></h2>
+						<p>Москва</p>
+					</article>
+					<article>
+						<h3><font size="5" color="#8B0000" face="Times New Roman"><b>Школа</b></font></h2>
+<!-- когда будете менять текст, не используйте бюрократических слов типа ГБОУ СОШ, ну пожаалуйста -->
+						<p> Гимназия 1543
+						<img src="https://www.1543.ru/school.jpg"  width="220" height="200" alt="моя гимназия">
+						</p>
+					</article>
+				</div>
+
+				<div class="col-md-6">
+					<article>
+						<h3><font size="5" color="#8B0000" face="Times New Roman"><b>Тут можно написать</b></font></h2>
+						<p> С детсва я завидовала людям, которые знали, что хотят делать. <i>"Кем хочешь стать, когда вырастешь?"</i> - вопрос, на который непонятно, что отвечать.     <br>
+						Одно из воспоминаний из садика - выпускной альбом, в который надо написать профессию мечты и пустым оставить нельзя. <br>
+						В первом классе мне сказали, что я буду отличницей. <br>
+						В пятом - что гуманитарием. <br>
+						В восьмом - филологом. <br>
+						В одиннадцатом<br>
+						классы <br>
+						всё <br>
+						Теперь всё будет иначе, время самой находить себя. Очень хочется, чтобы вокруг были люди, которые знают, чего они хотят, чтобы они горели лингвистикой и поддерживали мой огонь интереса. Хочу твёрдо говорить, что хочу учиться, хочу держаться этим интересом. <br> 
+						Хочу любить так уверенно и сильно без формальностей, чтобы быть той лингвисткой, которую хочу видеть рядом с собой. Я не волшебник, я только учусь и хочу научиться главному - <b>любви к языку</b>.      </p>
+					</article>
+				</div>
+
+				<div class="col-md-3">
+					<h3><font size="5" color="#8B0000" face="Times New Roman"><b>Я в соцсетях</b></font></h3>
+<!-- тег <ul> - unordered list. Еще бывает тег <ol> -->
+					<ul>
+						<li> <b><a href="https://vk.com/m.obridko"> VK</a></li>
+						<li> <a href="https://t.me/Mobrbobr"> Telegram</a></b></li>
+											</div>
+		</section>
+
+<!-- это подвал. В этой части страницы обычно ставят копирайт (с помощью символа &copy;) и пишут об истории создания страницы. Поставьте свой копирайт -->
+		<footer class="bs-docs-footer"> 
+			<div class="container"> 
+				<p style="text-align:right; ">&copy; В. Кузнецова, 2021</p> 
+			</div>
+		</footer>
+	</body>
+</html>
