@@ -1,0 +1,141 @@
+<!doctype html>
+
+<!-- так в HTML обозначаются комментарии. Выше вы видите объявление типа документа (DOCTYPE), так браузер понимает, что код ниже нужно интерпретировать как html -->
+
+<html>
+
+<!-- зона заголовка html, тег <title> - строка, которую браузер отображает на вкладках над страницами, <meta> и <link> сообщают технические сведения для браузера, например, что файл имеет кодировку Юникод (utf-8) -->
+
+	<head>
+	<font face="courier new">
+		<title>Личная страница Анны Новоселовой</title>
+	 	<!-- Required meta tags -->
+	 	<meta charset="utf-8">
+	 	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+		<meta name="description" content="Личная страница и контакты">
+
+		<!-- Bootstrap Core CSS -->
+		<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" media="screen">
+<!-- Эта страница сделана с помощью bootstrap - популярной библиотеки для создания и настройки сайтов. Ниже вы увидите, что многие теги содержат атрибуты class - bootstrap содержит шаблоны, как такие элементы красиво оформить -->
+
+	</head>
+	
+<!-- body - главная, содержательная часть страницы. Контент на этой странице делится на меню (nav), "шапку" (header), "подвал" (footer) и все остальное (мы заключили остаток в тег section) -->	
+	<body>
+
+<!-- меню (navigation bar) -->
+
+		<nav id="mainNav" class="navbar navbar-default navbar-fixed-top navbar-custom">
+
+<!-- div - это контейнеры - коробочки с текстом и/или графикой, которые можно вкладывать друг в друга. Пристально смотреть на теги в этой части кода не нужно -->
+			<div class="container"> 
+				<div class="navbar-header"> 
+					<a href="https://ling.hse.ru/" class="navbar-brand">Школа лингвистики НИУ ВШЭ</a> 
+				</div> 
+				<nav class="collapse navbar-collapse" id="bs-navbar"> 
+					<ul class="nav navbar-nav navbar-right"> 
+						<li> <a href="https://olesar.github.io/lingdata/">Страница курса</a> </li> 
+						<li> <a href="https://vk.com/fistericl">Не хотите взглянуть на смешнявки нашего производства?</a> </li> 
+<!-- поправьте номер группы в URL, если нужно (от 1 до 4) -->
+					</ul>
+				</nav> 
+			</div>
+		</nav>
+
+<!-- начинается шапка. у тега header есть атрибут style, который задает цвет фона и отступы. поменяйте значения атрибутов и посмотрите, как изменится страница -->
+
+		<header style="background-color:#07032B; padding-top:70px; "> 
+			<div class="container"> 
+				<div class="row">
+					<div class="col-md-4">
+						<br><br>
+<!-- здесь и дальше нужно поменять весь содержательный текст, чтобы получилась ваша личная страница -->
+<font face="courier new">
+<font color="white">
+						<h1>Анна Новоселова</h1>
+						<hr> <!-- это горизонтальная линия -->
+						<p><i>True neutral</i></p> 
+					</div>
+					<div class="col-md-4">
+<!-- img - тег для вставки изображений. Мы использовали атрибут style, чтобы задать размер изображения и ширину рамки-->
+<!-- Измените URL на URL вашей фотографии, а также настройте размер изображения -->
+<img src="https://raw.githubusercontent.com/iwantsomemarzipan/mywebpage/main/photo1667091026.jpeg" style="height:320px; margin:20px 20px 40px 20px; " >
+					</div>
+				</div>
+			</div>
+		</header>
+
+<!-- часть страницы, которая под шапкой -->
+<header style="background-color:#E6EEFA; padding-top:40px; ">
+		<section id="portfolio">
+			<div class="container">
+<font color="black">
+<!-- атрибут col-md-... говорит, что контент будет разделен на несколько столбцов, их ширина соотносится как 3 - 6 - 3 (Bootstrap использует воображаемую сетку из 12 равных по ширине колонок) -->
+				<div class="col-md-4">
+
+<!-- <article> не влияет на оформление, но помогает структурировать контент на осмысленые разделы -->
+					<article>
+						<h3> <b>Место учебы</b></h2>
+						<p>Фундаментальная и прикладная лингвистика, НИУ ВШЭ, Москва</p>
+					</article>
+					<article>
+						<h3><b>Родной город</b></h2>
+						<p>Москва</p>
+					</article>
+					<article>
+						<h3><b>Школа</b></h2>
+<!-- когда будете менять текст, не используйте бюрократических слов типа ГБОУ СОШ, ну пожаалуйста -->
+						<p>Школа №1748</p>
+					</article>
+				</div>
+
+				<div class="col-md-5">
+					<article>
+						<h3><b>Ой, тут что,</b> <i><b>про меня?</b></i></h2>
+						<p>1. Не верьте моей фамилии, я <i>почти всегда</i><br>
+						&nbsp &nbspпишу букву Ё<br>
+						2. На многих моих аватарках стоят котики... <br>
+						&nbsp &nbspОднако собак я люблю чуууть больше <br>
+						3. НО всё-таки моё самое любимое <br>
+						&nbsp &nbspживотное - байкальская нерпа <br>
+						4. Рыба вкуснее мяса, <b>change my mind</b> <br>
+						5. <b>А сейчас будет мой любимый анекдот про Штирлица</b><br>
+						<i>&nbsp &nbspШтирлиц наконец пробрался в кабинет Мюллера, <br>
+						&nbsp &nbspроется в шкафу с документами. <br>
+						&nbsp &nbspВдруг дверь открывается, <br>
+						&nbsp &nbspШтирлиц резко все закрывает и встаёт. <br>
+						&nbsp &nbspМюллер удивлённо спрашивает: <br>
+                        &nbsp &nbsp— Штирлиц, что вы здесь делаете? <br>
+                        &nbsp &nbsp— Я жду трамвая. <br>
+                        &nbsp &nbsp— Трамваи здесь не ходят. <br>
+                        &nbsp &nbsp— Трамваи вообще не ходят. У них нет ног. <br>
+                        &nbsp &nbspМюллер озадаченно разворачивается, <br>
+						&nbsp &nbspвыходит в коридор и выкуривает сигарету, <br>
+						&nbsp &nbspа когда возвращается, кабинет уже пуст. <br>
+                        &nbsp &nbsp— Уехал — подумал Мюллер.</i> <br></p>
+					</article>
+				</div>
+
+				<div class="col-md-3">
+					<h3>Я в соцсетях</h3>
+<!-- тег <ul> - unordered list. Еще бывает тег <ol> -->
+					<ul>
+						<li> <a href="https://vk.com/huafc">VK</a> </li>
+						<li> <a href="https://t.me/llttttss">Telegram</a> </li>
+						<li> <a href="https://github.com/iwantsomemarzipan">GitHub</a> </li>
+						<li> <a href="https://gitlab.com/iwantsomemarzipan">GitLab</a> </li>
+						<li> <a href="https://open.spotify.com/user/31vtuji5zp6pzu2jl22qssvjvwke?si=XaCQyL0gQ3eUcwz8gNUnQw&utm_source=copy-link">Spotify</a> </li>
+					</ul>
+				</div>
+			</div>
+		</section>
+
+<!-- это подвал. В этой части страницы обычно ставят копирайт (с помощью символа &copy;) и пишут об истории создания страницы. Поставьте свой копирайт -->
+		<footer class="bs-docs-footer"> 
+			<div class="container"> 
+				<p style="text-align:right; ">&copy; А. Новоселова, 2022</p> 
+			</div>
+		</footer>
+	</body>
+</html>
