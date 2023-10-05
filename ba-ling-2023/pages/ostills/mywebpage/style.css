@@ -1,0 +1,73 @@
+html {
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  margin: 0;
+}
+
+h1 {
+  font-family: "BeauRivage";
+}
+
+.header {
+  display: block;
+  margin: 0;
+  height: 850px;
+  background-image: url("ilya.jpg");
+  background-repeat: no-repeat;
+  -moz-background-size: 100%;
+  /* Firefox 3.6+ */
+  -webkit-background-size: 100%;
+  /* Safari 3.1+ и Chrome 4.0+ */
+  -o-background-size: 100%;
+  /* Opera 9.6+ */
+  background-size: 100%;
+  /* Современные браузеры */
+}
+
+.name {
+  position: relative;
+  display: inline-block;
+  margin-left: 40px;
+  margin-top: 20px;
+  font-size: 60px;
+}
+
+.name:hover {
+  color: white;
+  cursor: pointer;
+}
+
+.table {
+  border: 1px solid black;
+  width: 100%;
+}
+
+
+@font-face {
+  font-family: "BeauRivage";
+  src: url("BeauRivage.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+
+th {
+  border: 1px solid black;
+  color: white;
+  background: #1C1C1C;
+}
+
+td {
+  border: 1px solid black;
+}
+
+.vk {
+  text-decoration: none;
+}
+
+.vk:hover {
+  color: blue;
+  cursor: pointer;
+}

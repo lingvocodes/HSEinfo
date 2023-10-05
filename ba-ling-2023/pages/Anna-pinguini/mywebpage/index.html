@@ -1,0 +1,122 @@
+<!-- Здравствуйте! Я считаю важным заметить, что во время выполнения этого задания мне помогали. Не делать за меня, но объяснить, показать на примере,
+подсказать - без этого я бы не смогла разобраться в абсолютно новом для меня языке. Многим способам меня научили более опытные одногруппники. То, что я использовала в своей работе, мне понятно и удобно. Поскольку я все
+прописывала сама, я понимаю и могу объяснить значение любой части кода.
+Надеюсь, такая взаимопомощь между студентами не возбраняется.   -->
+
+
+<!DOCTYPE html>
+
+<html>
+
+  <head>
+    <title> Личная страница </title>
+    <meta charset ='unf - 8'>
+    <meta name = "viewport" content="width=device-width, initial-scale=1">
+    <!--- viewport делает отзывчивый дизайн сайта -->
+    <meta name = "discription" content= "Личная страничка, контакты - в общем, немного обо мне ">
+
+<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" media="screen">
+<!-- rel определяет отношение между текущим документом и родиной ссылки
+media определяет устройство, к которому применяется стилевое оформление -->
+
+<style>
+
+  body
+{
+  background color: mintcream;
+}
+
+
+footer {text-align: center; font-size: small; margin-top: 12pt; margin-bottom: 40pt;}
+a {color: lightgray; font-family: "Tahoma"; font-size: 13pt}
+a:hover {color: darkgray}
+h1{font-family: "Tahoma"; text-align: center; color: ivory; font-size: 30pt}
+h2{font-family:"Tahoma"; text-align: left; color: darkolivegreen; font-size:14pt}
+h3{font-family: "Tahoma"; text-align: center; color: ivory; font-size: 11pt}
+h4{font-family: "Tahoma"; text-align: center; color: #1f1d05; font-size: 12pt}
+li{margin-top: 3px}
+main{display:flex}
+
+  </style>
+</head>
+
+<body>
+<!--- nav организовывает навигацию по сайту: id -  уникальное имя элемента; class - связь тега со стилевым оформлением -->
+<nav id="Top_menu" class="navbar navbar-default navbar-fixed-top navbar-custom">
+  <div class = "container">
+      <div class = "navbar-header">
+            <a href = "https://ling.hse.ru/en/" class ="navbar-brand"> Школа лингвистики НИУ ВШЭ </a> </div>
+
+    <nav class = "collapse navbar-collapse" id= "right-sight navbar">
+      <ul class= "nav navbar-nav navbar-right">
+        <li> <a href = "https://yandex.ru/maps/org/niu_vshe_fakultet_gumanitarnykh_nauk/65999235615/?ll=37.663297%2C55.766740&z=16.87"> Наш корпус на Басманной </a> </li>
+      </ul>
+    </nav>
+  </div>
+</nav>
+
+  <header style="background-color:olivedrab; padding-top:70px; ">
+    <div class ="container">
+      <div class ="row">
+        <div class ="col-md-6">
+
+          <br><br>
+<!-- <br> перенос строки, <p> параграф, <i> курсив, <b> жирный-->
+          <h1> Гуськова Анна </h1>
+          <hr>
+          <p><h3> Но в обычной жизни лучше Нюра :) </h3><p>
+          <br>
+        </div>
+      </div>
+    </div>
+  </header>
+
+<main>
+    <div class="container">
+    <div class="col-md-4">
+          <aside id="pro photo">
+          <br><br>
+          <img src="https://raw.githubusercontent.com/Anna-pinguini/lingdata/main/my%20webpage/myphoto.JPG" style="height: 500px">
+          <p><h4><i> Здесь я младше года на 4, но зато с лошадью</i></h4></p>
+          </aside>
+    </div>
+
+    <div class="col-md-5">
+      <article>
+          <section>
+            <br>
+            <h2>Немного из биографии:</h2>
+            <ul><li>Я выросла в Москве и очень люблю свой город </li></ul>
+            <ul><li>Последние 3 года училась в школе "Интеллектуал"</li></ul>
+            <ul><li>Пока было время, много занималась спортом</li></ul>
+            <ul><li>С 8 лет почти ежегодно хожу в походы</li></ul>
+          </section>
+          <section>
+            <h2>Обо мне сегодняшней:</h2>
+            <ul><li>Учу немецкий, в планах на универ еще испанский или французский</li></ul>
+            <ul><li>Катаюсь по городам на роликах (конкретизирую для знающих: freeskate, slalom)</li></ul>
+            <ul><li>Очень жду начала нормальной учебы, а то где моя вторая половина предметов?)</li></ul>
+          </section>
+          <section>
+            <h2>Насчет будущего:</h2>
+            <ul><li>Кажется, уходить в лингвистику как в науку, я не собираюсь (но кто там знает, что за 4 года изменится)</li></ul>
+            <ul><li>А вот обнаружить себя через пару лет в экспелиции в тундре где-нибудь я вполне могу</li></ul>
+          </section>
+       </article>
+     </div>
+
+     <div class="col-md-3">
+       <article>
+         <br>
+         <h2> Меня можно найти:</h2>
+         <ul><li><a href="https://t.me/ari_acer">в Telegram </a></li>
+            <li><a href="https://t.me/ari_acer"> и снова в Telegram </a></li>
+            <li><a href="https://t.me/ari_acer"> в общем, только в Telegram</a></li></ul>
+       </article>
+     </div>
+  </main>
+   <footer>&copy; А.В. Гуськова, 2023</footer>
+
+</body>
+
+</html>

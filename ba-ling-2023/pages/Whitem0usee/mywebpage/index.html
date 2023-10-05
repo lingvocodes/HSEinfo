@@ -1,0 +1,150 @@
+<!doctype html>
+
+<!-- так в HTML обозначаются комментарии. Выше вы видите объявление типа документа (DOCTYPE), так браузер понимает, что код ниже нужно интерпретировать как html -->
+
+<html>
+
+<!-- зона заголовка html, тег <title> - строка, которую браузер отображает на вкладках над страницами, <meta> и <link> сообщают технические сведения для браузера, например, что файл имеет кодировку Юникод (utf-8) -->
+
+	<head>
+		<title>Личная страница Ирины Зайцевой</title>
+	 	<!-- Required meta tags -->
+	 	<meta charset="utf-8">
+	 	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+		<meta name="description" content="Личная страница и контакты">
+
+		<!-- Bootstrap Core CSS -->
+		<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" media="screen">
+<!-- Эта страница сделана с помощью bootstrap - популярной библиотеки для создания и настройки сайтов. Ниже вы увидите, что многие теги содержат атрибуты class - bootstrap содержит шаблоны, как такие элементы красиво оформить -->
+	</head>
+	
+<!-- body - главная, содержательная часть страницы. Контент на этой странице делится на меню (nav), "шапку" (header), "подвал" (footer) и все остальное (мы заключили остаток в тег section) -->	
+	<body>
+
+<!-- меню (navigation bar) -->
+
+		<nav id="mainNav" class="navbar navbar-default navbar-fixed-top navbar-custom">
+
+<!-- div - это контейнеры - коробочки с текстом и/или графикой, которые можно вкладывать друг в друга. Пристально смотреть на теги в этой части кода не нужно -->
+			<div class="container"> 
+				<div class="navbar-header"> 
+					<a href="https://ling.hse.ru/" class="navbar-brand">Школа лингвистики НИУ ВШЭ</a> 
+				</div> 
+				<nav class="collapse navbar-collapse" id="bs-navbar"> 
+					<ul class="nav navbar-nav navbar-right"> 
+						<li> <a href="https://lingvocodes.github.io/HSEinfo/ba-ling-2021/index.html">Страница курса</a> </li> 
+						<li> <a href="https://lingvocodes.github.io/HSEinfo/ba-ling-2021/latin_2.html">Страница группы</a> </li> 
+<!-- поправьте номер группы в URL, если нужно (от 1 до 4) -->
+					</ul>
+				</nav> 
+			</div>
+		</nav>
+
+<!-- начинается шапка. у тега header есть атрибут style, который задает цвет фона и отступы. поменяйте значения атрибутов и посмотрите, как изменится страница -->
+
+		<header style="background-color:RosyBrown; padding-top:50px; "> 
+			<div class="container"> 
+				<div class="row">
+					<div class="col-md-4">
+						<br><br>
+<!-- здесь и дальше нужно поменять весь содержательный текст, чтобы получилась ваша личная страница -->
+						<h1>Ирина Зайцева</h1>
+						<hr> <!-- это горизонтальная линия -->
+						<p>Привет! Меня зовут Ирина, <b>Ирэн</b>, если вам так будет удобнее, или же просто <b>мышка</b>!</p> 
+						<p><i>,,Какие мы мошенники! На самом деле человек по-настоящему счастлив только тогда, когда он меньше всего обращает внимание на время и когда его не подгоняет страх. И всё-таки, даже если тебя подгоняет страх, можно смеяться. А что же ещё остаётся делать?"</i></p> 
+					</div>
+					<div class="col-md-2">
+<!-- img - тег для вставки изображений. Мы использовали атрибут style, чтобы задать размер изображения и ширину рамки-->
+<!-- Измените URL на URL вашей фотографии, а также настройте размер изображения -->
+<img src="IMG_4118.JPG" style="height:320px; margin:20px 20px 40px 20px; " >
+					</div>
+				</div>
+			</div>
+		</header> 
+
+<!-- часть страницы, которая под шапкой -->
+		<section id="portfolio">
+			<div class="container">
+
+<!-- атрибут col-md-... говорит, что контент будет разделен на несколько столбцов, их ширина соотносится как 3 - 6 - 3 (Bootstrap использует воображаемую сетку из 12 равных по ширине колонок) -->
+				<div class="col-md-3">
+
+<!-- <article> не влияет на оформление, но помогает структурировать контент на осмысленые разделы -->
+					<article>
+						<h3><font color="RosyBrown" face="Courier">Образование</font></h3>
+						<p>Факультет гуманитарных наук, НИУ ВШЭ, Москва</p>
+					</article>
+					<article>
+						<h3><font color="RosyBrown" face="Courier">Родной город</font></h3>
+						<p>Пензенская обл., г. Заречный.</p>
+					</article>
+					<article>
+						<h3><font color="RosyBrown" face="Courier">Прошлые места учёбы</font></h3>
+<!-- когда будете менять текст, не используйте бюрократических слов типа ГБОУ СОШ, ну пожаалуйста -->
+						<p>2012-2016: Школа №225</p>
+						<p>2016-2023:<a href=" https://gmn44.edu-penza.ru"> Гимназия №44</a></p>
+					</article>
+				</div>
+
+				<div class="col-md-3">
+					<article>
+					    <h3> <font color="RosyBrown" face="Courier">Что-то нетривиальное обо мне:D</font></h3>
+					        <ul> 
+						        <li>Красивая дата рождения 05.05.2005))</li>
+						        <li>Безумно люблю ночь! Зачем жить днём?</li>
+								<li>Обожаю Ремарка.</li>
+						        <li>A little bit sporty: 
+						            <ol> 
+							            <li> 7 лет фигурного катания.</li>
+								        <li> 5 лет спортивных бальных танцев.</li>
+								        <li> 2 года лёгкой атлетики.</li>
+								        <li> 11 лет горных лыж (на борде тоже катаюсь, погнали сезон открывать!).</li>
+							        </ol>							
+						        <li>Немного умею играть на фортепиано.</li>		
+						        <li>Было два сотрясения мозга.</li>
+						        <li>Киноман;меломан;сериаломан etc.</li>	
+						        <li>Легка на подъём.</li>
+						        <li>Есть пёс, которого я вечно зову балбесом, хотя его имя "Юки" вообще-то.</li>
+						    </ul> 
+					</article>
+				</div>
+	
+			   <div class="col-md-3">
+					<h3><font color="RosyBrown" face="Courier">Любимая музыка</font></h3>
+					<ol>
+						<li>Hotel California - Eagles</li>
+						<li>Salut - Joe Dassin</li>
+						<li>Lithium - Nirvana</li>
+						<li>Wind of Change - Scorpions</li>
+						<li>Goodbye Yellow Brick Road - Elton John</li>
+						<li>Ne me quitte pas - Jacques Brel</li>
+						<li>La Bohème - Charles Aznavour</li>
+						<li>Une vie d'amour - Mireille Mathieu</li>
+						<li>Merry-Go-Round of Life - Joe Hisaishi</li>
+						<li>The Black Parade - My Chemical Romance </li>
+				        <li>I Hate Everything About You - Three Days Grace</li>
+						
+					</ol>
+				</div>
+				
+				<div class="col-md-3">
+					<h3><font color="RosyBrown" face="Courier">Я в соцсетях</font></h3>
+					<ul>
+						<li><a href="https://vk.com/poohsan">VK</a></li>
+						<li>Telegram: @whitem0use</li>
+						<li>Instagram: @_whitem0use_</li>
+					</ul>
+				</div>
+			</div>	
+		</section>
+		   
+                
+<!-- это подвал. В этой части страницы обычно ставят копирайт (с помощью символа &copy;) и пишут об истории создания страницы. Поставьте свой копирайт -->
+		<footer class="bs-docs-footer"> 
+			<div class="container"> 
+				<p style="text-align:right; ">&copy; И. Зайцева, 2023</p> 
+			</div>
+		</footer>
+	</body>
+</html>

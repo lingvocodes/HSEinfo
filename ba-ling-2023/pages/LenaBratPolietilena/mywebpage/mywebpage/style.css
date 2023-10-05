@@ -1,0 +1,98 @@
+html {
+	font-family: Candara, Helvetica Neue, Helvetica, Arial, sans-serif;
+	color: midnightblue;
+	background-color: #f8f9f9;
+}
+
+.container {
+	display: flex;
+	justify-content: space-between;
+	margin: 10px 10px;
+}
+
+.navmenu {
+	justify-content: end;
+	gap: 1em;
+}
+
+.navleft, .navmenu {
+	display: flex;	
+	align-items: center;
+	font-size: 1.5em;
+}
+
+.photo {
+	width: 20%;
+	margin: 10px;
+}
+
+.personal-stuff {
+	width: 65%;
+	align-items: center;
+}
+
+.cantacts {
+	width: 20%;
+}
+
+.hr1 {
+	color: white;
+	border-width: 1px;
+	border-style: solid;
+}
+
+.logo {
+	vertical-align: middle;
+	width: 20px;
+}
+
+nav a:-webkit-any-link {
+	color: midnightblue;
+	text-decoration: none;
+}
+
+header a:-webkit-any-link {
+	color: white;
+	text-decoration: none;
+}	
+
+section a:visited {
+	text-decoration-color: midnightblue;
+	color: midnightblue;
+}
+
+li {
+	margin-bottom: 5px;
+}
+
+.hr2 {
+	color: midnightblue;
+	border-width: 1px;
+	border-style: solid;
+}
+
+.container-footer {
+	margin: 10px 10px;
+}
+
+h1 {
+	font-size: 5em;
+	margin-bottom: -15px;
+	margin-top: 0px;
+}
+
+h2, h3 {
+	margin-bottom: -10px;
+}
+
+.sista, .balbesi, .Purr, .Tioma {
+	display: flex;
+}
+
+.gallery {
+	 border-left: solid;
+}
+
+nav a:hover, header a:hover {
+	color: #1f45fc;
+}

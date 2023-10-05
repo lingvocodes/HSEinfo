@@ -1,0 +1,124 @@
+<!doctype html>
+<html>
+	<head>
+		<title>Личная страница Данченко Алексея</title>
+	 	<!-- Required meta tags -->
+	 	<meta charset="utf-8">
+	 	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+		<meta name="description" content="Личная страница и контакты">
+		<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" media="screen">
+		<style>
+			@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@600&family=Oswald&family=Rancho&display=swap');
+			.avatar1 {background: var(--img-url) center/cover; width: 350px; height: 350px;	border-radius: 50%;	box-shadow: inset 0 0 0 2px rgba(#000, 0.1); position: absolute; left: 600px; top: 1px}
+			.avatar2 {background: var(--img-url) center/cover; width: 350px; height: 350px;	border-radius: 50%;	box-shadow: inset 0 0 0 2px rgba(#000, 0.1); position: absolute; left: 600px; top: 301px}
+			img {border-radius: 30px}
+			body {background: #CD853F url(https://img2.akspic.ru/crops/1/1/0/5/6/165011/165011-2021_imac_advertising_wallpaper_in_dark_yellow_for_ipad_or_desktop-3840x2160.jpg)}
+			header {background: #CD853F url(https://img2.akspic.ru/crops/1/1/0/5/6/165011/165011-2021_imac_advertising_wallpaper_in_dark_yellow_for_ipad_or_desktop-3840x2160.jpg)}
+		</style>
+	</head>
+	<body>
+		<nav id="mainNav" class="navbar navbar-default navbar-fixed-top navbar-custom" style="background: #CD853F">
+			<div class="container"> 
+				<div class="navbar-header"> 
+					<a href="https://ling.hse.ru/" class="navbar-brand"><span style="font-size: 20pt; color: #FFDEAD; font-family: 'Rancho', cursive">Школа лингвистики НИУ ВШЭ</span></a> 
+				</div> 
+				<nav class="collapse navbar-collapse" id="bs-navbar"> 
+					<ul class="nav navbar-nav navbar-right"> 
+						<li> <a href="https://lingvocodes.github.io/HSEinfo/ba-ling-2021/index.html"><span style="font-size: 15pt; color: #FFDEAD; font-family: 'Rancho', cursive">Страница курса</span></a> </li>
+						<li> <a href="https://lingvocodes.github.io/HSEinfo/ba-ling-2021/latin_2.html"><span style="font-size: 15pt; color: #FFDEAD; font-family: 'Rancho', cursive">Страница группы</span></a> </li> 
+					</ul>
+				</nav> 
+			</div>
+		</nav>
+		<header style="padding-top:100px; "> 
+			<div class="container">			
+				<div class="row">
+					<div class="col-md-4">
+						<br><br>
+						<h1><span style="color: #FFDEAD; font-size: 40pt; font-family:'Caveat', cursive"> Данченко Алексей</span></h1>
+						<hr> 
+						<p><span style="color: #FFDEAD; font-size: 22.5pt; font-family: 'Caveat', cursive">Разносторонний человек с необычным ходом мышления, похожий на кота	(не мои слова). (─‿‿─)
+					</div>
+					<div class="col-md-4">
+<img src="https://raw.githubusercontent.com/DanLexOW/LingData/main/IMG_20221015_123550_164%20(1).jpg"
+	width="819,2"
+	height="614,4">
+	<div class="avatar1" style="--img-url: url(https://raw.githubusercontent.com/DanLexOW/LingData/main/IMG_20230519_133644_558.jpg)">
+	</div>
+	<div class="avatar2" style="--img-url: url(https://raw.githubusercontent.com/DanLexOW/LingData/main/IMG_20230103_225313_424.jpg)">
+	</div>				
+					</div>
+				</div>
+			</div>
+		</header>
+		<section id="portfolio">
+			<div class="container">
+				<div class="col-md-3">
+					<article>
+						<h3><span style="color:#FFDEAD; font-size: 20pt; font-family: 'Rancho', cursive"> <u> Место учёбы:</span></u></h3>
+						<p><span style="color:#FFDEAD; font-size: 14pt; font-family: 'Oswald', sans-serif"> Фундаментальная и компьтерная лингвистика (БКЛ233), НИУ ВШЭ, Москва</span></p>
+					</article>
+					<article>
+						<h3><span style="color:#FFDEAD; font-size: 20pt; font-family: 'Rancho', cursive"> <u> Родной город:</span></u></h3>
+						<p><span style="color:#FFDEAD; font-size: 14pt; font-family: 'Oswald', sans-serif"> Москва</span></p>
+					</article>
+					<article>
+						<h3><span style="color:#FFDEAD; font-size: 20pt; font-family: 'Rancho', cursive"> <u> Школа:</span></u></h3>
+						<p><span style="color:#FFDEAD; font-size: 14pt; font-family: 'Oswald', sans-serif"> Лицей НИУ ВШЭ <br>
+						(Экономика и соц.науки)</span></p>
+					</article>
+				</div>
+				<div class="col-md-6">
+					<article>
+						<h3><span style="color:#FFDEAD; font-size: 20pt; font-family: 'Rancho', cursive"> <u> Фактики обо мне:</span></u></h3>
+						<p><span style="color:#FFDEAD; font-size: 14pt; font-family: 'Oswald', sans-serif"><i>Хобби:</i><br>
+						· Гик до мозга костей (Хотите поговрить о фильмах/сериалах/играх/комиксах/аниме/манге - вы по адресу); <br>
+						· Волейбол и тренажёрный зал как смысл жизни;<br>
+						· Барменство; <br>
+						· Английский/Корейский/Немецкий. <br></span></p>
+						<p><span style="color:#FFDEAD; font-size: 14pt; font-family: 'Oswald', sans-serif"><i>Любимые фильмы:</i> <br>
+						· 1+1; <br>
+						· Звёздные войны; <br>
+						· Зелёная книга. <br></span></p>
+						<p><span style="color:#FFDEAD; font-size: 14pt; font-family: 'Oswald', sans-serif"><i>Любимые сериалы:</i><br>
+						· Как я встретил вашу маму; <br>
+						· Внешние отмели; <br>
+						· Бумажный дом. <br></span></p>
+						<p><span style="color:#FFDEAD; font-size: 14pt; font-family: 'Oswald', sans-serif"><i>Любимые аниме:</i><br>
+						· Волейбол; <br>
+						· Чёрный Клевер; <br>
+						· Убийца Акамэ; <br>
+						· Сага о Винланде; <br>
+						· Сказка о Хвосте Феи. <br></span></p>
+						<p><span style="color:#FFDEAD; font-size: 14pt; font-family: 'Oswald', sans-serif"><i>Любимые игры:</i><br>
+						· Assassin's Creed; <br>
+						· Batman: Arkham; <br>
+						· The Witcher; <br>
+						· Overwatch; <br>
+						· League of Legends. <br></span></p>
+						<p><span style="color:#FFDEAD; font-size: 14pt; font-family: 'Oswald', sans-serif"><i>Любимые исполнители: </i><br>
+						· Linkin Park; <br>
+						· Blind Channel; <br>
+						· NEFFEX; <br>
+						· I Prevail; <br>
+						· Smash Into Pieces. </span></p>
+					</article>
+				</div>
+
+				<div class="col-md-3">
+					<h3><span style="color:#FFDEAD; font-size: 20pt; font-family: 'Rancho', cursive"> <u> Мои контакты:</span></u></h3>
+					<p><a href="https://vk.com/msby_danlex"><span style="font-size: 14pt; color: #FFDEAD; font-family: 'Oswald', sans-serif">VK</span></a><br>
+					<a href="https://t.me/msby_DanLex"><span style="font-size: 14pt; color: #FFDEAD; font-family: 'Oswald', sans-serif">Telegram</span></a><br>
+					<a href="https://instagram.com/msby_danlex?utm_source=qr&igshid=YzU1NGVlODEzOA=="><span style="font-size: 14pt; color: #FFDEAD; font-family: 'Oswald', sans-serif">Instagram</span></a></p>
+					</ul>
+				</div>
+			</div>
+		</section>
+		<footer class="bs-docs-footer"> 
+			<div class="container"> 
+				<p style="text-align:right; color:#FFDEAD; font-size: 14pt; font-family: 'Caveat', cursive">&copy; А.Данченко, 2023</p> 
+			</div>
+		</footer>
+	</body>
+</html>

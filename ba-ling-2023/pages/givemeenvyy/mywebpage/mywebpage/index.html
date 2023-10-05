@@ -1,0 +1,120 @@
+<!doctype html>
+
+<!-- так в HTML обозначаются комментарии. Выше вы видите объявление типа документа (DOCTYPE), так браузер понимает, что код ниже нужно интерпретировать как html -->
+
+<html>
+
+<!-- зона заголовка html, тег <title> - строка, которую браузер отображает на вкладках над страницами, <meta> и <link> сообщают технические сведения для браузера, например, что файл имеет кодировку Юникод (utf-8) -->
+
+	<head>
+		<title>Личная страница Алёны Федотовой</title>
+	 	<!-- Required meta tags -->
+	 	<meta charset="utf-8">
+	 	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+		<meta name="description" content="Личная страница и контакты">
+
+		<!-- Bootstrap Core CSS -->
+		<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" media="screen">
+<!-- Эта страница сделана с помощью bootstrap - популярной библиотеки для создания и настройки сайтов. Ниже вы увидите, что многие теги содержат атрибуты class - bootstrap содержит шаблоны, как такие элементы красиво оформить -->
+
+	</head>
+	
+<!-- body - главная, содержательная часть страницы. Контент на этой странице делится на меню (nav), "шапку" (header), "подвал" (footer) и все остальное (мы заключили остаток в тег section) -->	
+	<body>
+
+<!-- меню (navigation bar) -->
+
+		<nav id="mainNav" class="navbar navbar-default navbar-fixed-top navbar-custom">
+
+<!-- div - это контейнеры - коробочки с текстом и/или графикой, которые можно вкладывать друг в друга. Пристально смотреть на теги в этой части кода не нужно -->
+			<div class="container"> 
+				<div class="navbar-header"> 
+					<a href="https://ling.hse.ru/" class="navbar-brand">Школа лингвистики НИУ ВШЭ</a> 
+				</div> 
+				<nav class="collapse navbar-collapse" id="bs-navbar"> 
+					<ul class="nav navbar-nav navbar-right"> 
+						<li> <a href="https://lingvocodes.github.io/HSEinfo/ba-ling-2021/index.html">Страница курса</a> </li> 
+						<li> <a href="https://lingvocodes.github.io/HSEinfo/ba-ling-2021/latin_2.html">Страница группы</a> </li> 
+<!-- поправьте номер группы в URL, если нужно (от 1 до 4) -->
+					</ul>
+				</nav> 
+			</div>
+		</nav>
+
+<!-- начинается шапка. у тега header есть атрибут style, который задает цвет фона и отступы. поменяйте значения атрибутов и посмотрите, как изменится страница -->
+
+		<header style="background-color:LightSkyBlue; padding-top:75 px; "> 
+			<div class="container"> 
+				<div class="row">
+					<div class="col-md-4">
+						<br><br>
+<!-- здесь и дальше нужно поменять весь содержательный текст, чтобы получилась ваша личная страница -->
+						<h1>Алёна Федотова</h1>
+						<hr> <!-- это горизонтальная линия -->
+						<p><b>всем привет! поскольку ниже будет место для того, чтобы рассказать о себе, тут просто будет пояснение моего ника в гитхабе (и не только). моя любимая музыальная группа - Panic! At the Disco, а Time to Dance (которая, кстати, является кратким пересказом моей любимой книжки Чака Паланика "Невидимки") - любимая песня уже очень много лет. оттуда, собственно говоря, и берется фраза: "give me envy, give me malice, give me your attention"</b></p> 
+					</div>
+					<div class="col-md-4">
+<!-- img - тег для вставки изображений. Мы использовали атрибут style, чтобы задать размер изображения и ширину рамки-->
+<!-- Измените URL на URL вашей фотографии, а также настройте размер изображения -->
+<img src="https://raw.githubusercontent.com/givemeenvyy/lingdata/main/mywebpage/%D1%82%D0%B2%D0%BE%D1%8F%20%D0%BC%D0%B0%D0%BC%D0%B0.jpg" height:120 px; margin:20 px 20 px 40 px 20 px;  >
+					</div>
+				</div>
+			</div>
+		</header>
+
+<!-- часть страницы, которая под шапкой -->
+		<section id="portfolio">
+			<div class="container">
+
+<!-- атрибут col-md-... говорит, что контент будет разделен на несколько столбцов, их ширина соотносится как 3 - 6 - 3 (Bootstrap использует воображаемую сетку из 12 равных по ширине колонок) -->
+				<div class="col-md-3">
+
+<!-- <article> не влияет на оформление, но помогает структурировать контент на осмысленые разделы -->
+					<article>
+						<h3>учусь вот тут!</h3>
+						<p>фундаментальная и компьютерная лингвистика, НИУ ВШЭ, Москва</p>
+					</article>
+					<article>
+						<h3>родилась вот тут</h3>
+						<p>Москва</p>
+					</article>
+					<article>
+						<h3>училась вот тут</h3>
+<!-- когда будете менять текст, не используйте бюрократических слов типа ГБОУ СОШ, ну пожаалуйста -->
+						<p>ОАНО "Школа "Летово" (лучшее место в мире)</p>
+					</article>
+				</div>
+
+				<div class="col-md-6">
+					<article>
+						<h3>что могу сказать...</h3>
+						<p>из основного:<br>
+						- уже второй год работаю вожатой в лагере "проектоград" и просто обожаю этим заниматься! <br>
+						- совершенно не представляю свою жизнь без музыки - очень люблю петь и выступать, периодически сажусь за фортепиано в качестве медитации (даже корочка из музыкалки имеется) <br>
+						- unpopular opinion, но геометрия - лучший школьный предмет <br>
+						- периодически начинаю рандомно говорить по-английски, kind of a passion of mine)) <br>
+						- 7 лет занималась фигурным катанием (traumatic experience, но периодически все равно скучаю) <br></p>
+					</article>
+				</div>
+
+				<div class="col-md-3">
+					<h3>вот тут меня можно найти!</h3>
+<!-- тег <ul> - unordered list. Еще бывает тег <ol> -->
+					<ul>
+						<li><a href= "vk.com/yourredheadrayofsunshine" >вк</a> </li>
+						<li><a href= "https://instagram.com/givemeenvyy?igshid=OGQ5ZDc2ODk2ZA==">инст </a> </li>
+						<li>тг - @givemeenvyy</li>
+					</ul>
+				</div>
+			</div>
+		</section>
+
+<!-- это подвал. В этой части страницы обычно ставят копирайт (с помощью символа &copy;) и пишут об истории создания страницы. Поставьте свой копирайт -->
+		<footer class="bs-docs-footer"> 
+			<div class="container"> 
+				<p style="text-align:right; ">&copy; А. Федотова, 2023</p> 
+			</div>
+		</footer>
+	</body>
+</html>

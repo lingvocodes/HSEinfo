@@ -1,0 +1,52 @@
+body {
+  background: rgb(239, 236, 236);
+  color: #544249;
+  font-weight: bold;
+  cursor: help;
+}
+a:any-link {
+  color: #544249;
+}
+a:hover {
+  color: #996699;
+}
+img {
+  border: 7mm ridge rgba(153, 102, 153, .5);
+  width: 70%;
+  margin: 1.5em;
+}
+#header {
+  position: sticky;
+  top: 0;
+  color: rgb(239, 236, 236);
+  height: 8vh;
+  background:  rgba(166, 98, 166, .8);
+  padding-left: 5em;
+  padding-top: 0.1em;  
+}
+#footer {
+  text-align: center;
+  position: fixed;
+  bottom: 0;
+  width: 99.9vw;
+  height: 4vh;
+  background: rgba(158, 86, 146, .6);
+  padding-left: 1.5em;
+  text-shadow: 1px 1px 2px #A040C3, 0 0 1em pink, 0 0 0.2em red;
+}
+.right {
+  float: right;
+  margin: 1.5em;
+  text-align: end;
+  font-size: 20px;
+  margin-left: 20%;
+}
+.left {
+  margin-right: 20%;
+  font-size: 20px;
+}
+#social {
+  position: fixed;
+  right: 3%;
+  top: 39%
+}

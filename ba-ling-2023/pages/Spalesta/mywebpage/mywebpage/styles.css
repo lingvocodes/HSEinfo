@@ -1,0 +1,95 @@
+body {
+	color: #8f8f8f;;
+	margin: 0;
+	padding-left: 10px;
+	font-family: 'Tahoma', sans-serif;
+	background: url('2023-09-10 (1).jpg');
+	background-repeat: no-repeat;
+	background-size: 100vw 100vh;
+}
+
+p {
+	margin: 20px 0;
+	text-align: left;
+}
+
+
+aside {
+    background: #22334a;
+    position: absolute;
+    color: #b9cee6;
+    padding: 1%;
+    top: 9%;
+	left: 7%;
+	border: dotted;
+	border-color: #b9cee6;
+	max-height: 80%;
+	max-width: 32%;
+}
+
+
+a {
+	color: b9cee6;
+}
+
+#star {
+	position: absolute;
+	left: 64%;
+	top: 34%;
+}
+
+
+
+
+
+
+.modal {
+    position: fixed; /* фиксированное положение */
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    
+    opacity: 0; /* по умолчанию модальное окно прозрачно */
+    pointer-events: none; /* элемент невидим для событий мыши */
+    margin: 0;
+    padding: 0;
+}
+/* При отображении модального окно */
+.modal:target {
+    opacity: 1; /* делаем окно видимым */
+	  pointer-events: auto; /* элемент видим для событий мыши */
+}
+/* ширина модального окна и его отступы от экрана */
+.modal-dialog {
+    position: relative;
+    width: auto;
+    margin: 10px;
+    padding: 10px;
+}
+@media (min-width: 576px) {
+  .modal-dialog {
+      max-width: 500px;
+      left: 52%;
+      top: 42%;
+      max-height: 360;
+  }
+}
+
+/* Стили кнопки "х" ("Закрыть")  */
+.close {
+    float: left;
+    font-family: sans-serif;
+    font-size: 34px;
+    color: #22334a;
+    text-decoration: none;
+    margin: 10px;
+
+}
+/* Стили для закрывающей кнопки в фокусе или наведении */
+.close:focus, .close:hover {
+    color: #ebde6e;
+    text-decoration: none;
+    cursor: pointer;
+}
+/* Стили блока основного содержимого окна */

@@ -1,0 +1,110 @@
+a:hover {
+    	color: #CE242B;
+	text-decoration: none;
+}
+
+a:link {
+	text-decoration: none;
+	color: white;
+}
+
+a:visited {
+	color: white;
+	text-decoration: none;
+}
+
+a:active {
+	color: red;
+	text-decoration: none;
+}
+
+body {
+	background-repeat: no-repeat;
+	background-size: cover;
+	font-family: Comic Sans MS;
+}
+
+.t {
+	width: 25%;
+}
+
+.tt {
+	width: 50%;
+}
+
+.header {
+	font-size: 20px;
+	text-align: center;
+	
+}
+
+.mainimage {
+	width: 240px;
+	height: 320px;
+	box-shadow: 10px 10px 20px pink;
+	border-radius: 25px;
+	border: 5px black dotted;
+}
+
+.main {
+	background-color: #FFE4E1;
+	font-family: Comic Sans MS;
+	padding: 30px;
+	border-radius: 35px;
+}
+
+.mainn {
+	margin-right: 10%;
+	margin-left: 10%;
+	text-align: center;
+	color: white;
+}
+
+.s {
+	text-align: right;
+	padding-right: 60px;
+}
+
+b {
+	font-size: 50px;
+	text-shadow: 10px 10px 20px #F08080;
+}
+
+div {
+	display: flex;
+}
+
+hr {
+	width: 700px;
+	height: 5px;
+	background-color: black;
+	border: none;
+}
+
+footer {
+	color: white
+}
+
+.footer {
+	text-align: center;
+	cursor: w-resize;
+}
+
+ul {
+	text-align: left;
+	list-style-type: none;
+}
+
+h4 {
+	font-weight: normal;
+}
+
+.p {
+	text-indent: 7%;
+	text-align: justify;
+	padding: 30px;
+}
+
+.td {
+	vertical-align: top;
+}

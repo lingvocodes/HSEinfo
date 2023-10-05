@@ -1,0 +1,147 @@
+<!doctype html>
+
+<!-- так в HTML обозначаются комментарии. Выше вы видите объявление типа документа (DOCTYPE), так браузер понимает, что код ниже нужно интерпретировать как html -->
+
+<html>
+
+<!-- зона заголовка html, тег <title> - строка, которую браузер отображает на вкладках над страницами, <meta> и <link> сообщают технические сведения для браузера, например, что файл имеет кодировку Юникод (utf-8) -->
+
+	<head>
+		<title>Личная страница Лашиной Дарьи Александровны</title>
+	 	<!-- Required meta tags -->
+	 	<meta charset="utf-8">
+	 	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+		<meta name="description" content="Личная страница и контакты">
+
+		<!-- Bootstrap Core CSS -->
+		<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" media="screen">
+<!-- Эта страница сделана с помощью bootstrap - популярной библиотеки для создания и настройки сайтов. Ниже вы увидите, что многие теги содержат атрибуты class - bootstrap содержит шаблоны, как такие элементы красиво оформить -->
+
+	</head>
+	
+<!-- body - главная, содержательная часть страницы. Контент на этой странице делится на меню (nav), "шапку" (header), "подвал" (footer) и все остальное (мы заключили остаток в тег section) -->	
+	<body>
+
+<!-- меню (navigation bar) -->
+
+		<nav id="mainNav" class="navbar navbar-default navbar-fixed-top navbar-custom">
+
+<!-- div - это контейнеры - коробочки с текстом и/или графикой, которые можно вкладывать друг в друга. Пристально смотреть на теги в этой части кода не нужно -->
+			<div class="container"> 
+				<div class="navbar-header"> 
+					<a href="https://ling.hse.ru/" class="navbar-brand">Школа лингвистики НИУ ВШЭ</a> 
+				</div> 
+				<nav class="collapse navbar-collapse" id="bs-navbar"> 
+					<ul class="nav navbar-nav navbar-right"> 
+						<li> <a href="https://lingvocodes.github.io/HSEinfo/ba-ling-2021/index.html">Страница курса</a> </li> 
+						<li> <a href="https://lingvocodes.github.io/HSEinfo/ba-ling-2021/latin_2.html">Страница группы</a> </li> 
+					</ul>
+				</nav> 
+			</div>
+		</nav>
+
+<!-- начинается шапка. у тега header есть атрибут style, который задает цвет фона и отступы. поменяйте значения атрибутов и посмотрите, как изменится страница -->
+
+		<header style="background-color:navajowhite; padding-top:50px; "> 
+			<div class="container"> 
+				<div class="row">
+					<div class="col-sm-4">
+						<br>
+						<h1>Лашина Дарья Александровна</h1>
+						<hr style="border-color: sienna;"> <!-- это горизонтальная линия -->
+						<p>Студентка <i>1 курса</i> <b>НИУ ВШЭ</b></p>
+						<hr style="border-color: sienna;"> 
+						<h2>От Дальнего Востока до Подмосковья</h2>
+						<p>Родилась я во Владивостоке, однако по достижении школьного возраста переселилась поближе к образовательному центру России — в Раменское (всего 43 км от Москвы).</p> 
+						<h2>Про выбор жизненного пути</h2>
+						<p>С 8 класса стала интересоваться программированием, в старшей школе увлеклась языкознанием и поняла, что хочу связать жизнь с <i><b>компьютерной лингвистикой</b></i>, возникшей на стыке технических и гуманитарных наук.</p> 
+						 
+						
+						<!--<span style="font-weight:bold; color:blue;">Привет</span>-->
+					</div>
+					<div class="col-sm-4">
+					<br><br>
+<!-- img - тег для вставки изображений. Мы использовали атрибут style, чтобы задать размер изображения и ширину рамки-->
+<img src="https://raw.githubusercontent.com/Dasha1480/lingdata/main/mywebpage/Я_аватарка.jpg" width="355,4" height="533,3">
+
+					</div>
+					
+					
+					<div class="col-sm-4">
+						<br>
+						<h2>Мои увлечения</h2>
+						<p>Я всегда была креативным человеком: с 3 лет занималась творчеством, любила экспериментировать с цветом в области одежды и со вкусовыми качествами продуктов — в кулинарной  области. Я с отличием окончила <b>художественную школу</b>, а также получила среднее специальное <b>музыкальное образование</b>.</p>
+						<hr style="border-color: sienna;">
+						<p>Конечно, область моих интересов не ограничивается исключительно высокотворческой направленностью. С детства я придерживалась активного образа жизни: 5 лет посещала спортивные секции, где занималась <b>легкой атлетикой</b>, часто играла в бадминтон и настольный теннис с друзьями.</p>
+						<hr style="border-color: sienna;">
+						<p>Также я увлекаюсь биологией и палеонтологией. Дома у меня находятся несколько собраний лишайников и большая коллекция ископаемых.</p>
+						<img src="https://raw.githubusercontent.com/Dasha1480/lingdata/main/mywebpage/вензель.jpg" width="384" height="153,6">
+					</div>
+				</div>
+			</div>
+			
+		</header>
+
+<!-- часть страницы, которая под шапкой -->
+		<section id="portfolio">
+			<div class="container">
+
+<!-- атрибут col-md-... говорит, что контент будет разделен на несколько столбцов, их ширина соотносится как 3 - 6 - 3 (Bootstrap использует воображаемую сетку из 12 равных по ширине колонок) -->
+				<div class="col-md-3">
+
+<!-- <article> не влияет на оформление, но помогает структурировать контент на осмысленые разделы -->
+					<article>
+						<h3>Место учебы</h3>
+						<p>Фундаментальная и прикладная лингвистика, НИУ ВШЭ, Москва</p>
+					</article>
+					<article>
+						<h3>Место проживания</h3>
+						<p>г. Раменское</p>
+					</article>
+					<article>
+						<h3>Школа</h3>
+						<p>Гимназия г. Раменское</p>
+					</article>
+					<article>
+						<h3>Родной город</h3>
+						<p>Владивосток</p>
+					</article>
+				</div>
+
+				<div class="col-md-6">
+					<article>
+						<h3>О моей семье</h3>
+						<p>Я живу вместе с родителями и младшим братом.<br>
+						<p>Около 2 лет назад в нашей семье появился еще один член - очаровательная корги Энни.<br>
+						<!--<p>В свободное время я активно занимаюсь дрессировкой любимой собаки. Сейчас Энни знает более 30 команд:)<br>-->
+						<img src="https://raw.githubusercontent.com/Dasha1480/lingdata/main/mywebpage/Энни3.jpg" width="300" height="200" >
+						<img src="https://raw.githubusercontent.com/Dasha1480/lingdata/main/mywebpage/Энни4.jpg" width="200" height="200" >
+						</p>
+					</article>
+				</div>
+
+				<div class="col-md-3">
+					<h3>Я в соцсетях</h3>
+<!-- тег <ul> - unordered list. Еще бывает тег <ol> -->
+					<ul>
+						<li>VK   ----><br>
+						<a href="https://vk.com/daria_lashina" >daria_lashina</a></li>
+						<li>Telegram   ----><br>
+						<a href="https://t.me/Daria_Lashina" >Daria_Lashina</a></li>
+						<li>Одноклассники   ----><br>
+						<a href="https://vk.com/away.php?utf=1&to=https%3A%2F%2Fok.ru%2Fprofile%2F565407772992%3Futm_campaign%3Dmobile_share%26utm_content%3Dprofile" >Дарья Лашина</a></li>
+						
+					</ul>
+				</div>
+			</div>
+		</section>
+
+<!-- это подвал. В этой части страницы обычно ставят копирайт (с помощью символа &copy;) и пишут об истории создания страницы. Поставьте свой копирайт -->
+		<footer class="bs-docs-footer"> 
+			<div class="container"> 
+				<p style="text-align:right; ">&copy; Лашина Д. А., 2023</p> 
+			</div>
+		</footer>
+	</body>
+</html>
